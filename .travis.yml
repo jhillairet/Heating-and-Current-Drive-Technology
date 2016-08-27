@@ -1,6 +1,3 @@
-before_install: 
-    - mkdir _build
-
 install:
     - sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended 
     - sudo apt-get install chktex
