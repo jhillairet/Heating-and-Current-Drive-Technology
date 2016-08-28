@@ -1,14 +1,23 @@
 \documentclass[a4paper,10pt]{book}
 \usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{gensymb} % for ^{\circ} or \degree for degrees C
+
+\usepackage[backend=biber,style=ieee,citestyle=numeric-comp ]{biblatex}
+\addbibresource{Bibliography.bib}
+
 \title{Heating and Current Drive Science and Technology for Controlled Magnetic Fusion}
 
-% Authors
+% List of Authors
 \input{./Authors.tex}
 
 \begin{document}
 \maketitle
+\tableofcontents
 
 \input{./Introduction.tex}
 \input{./LHCD.tex}
+
+\printbibliography[heading=bibintoc]
 
 \end{document}
