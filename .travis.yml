@@ -11,10 +11,10 @@ before_script:
     
 script:
     - mkdir _build
-    - pdflatex -output-directory _build master.tex
+    - pdflatex -interaction=nonstopmode -output-directory _build master.tex
     - ./biber master
-    - pdflatex -output-directory _build master.tex
-    - pdflatex -output-directory _build master.tex
+    - pdflatex -interaction=nonstopmode -output-directory _build master.tex
+    - pdflatex -interaction=nonstopmode -output-directory _build master.tex
 
 deploy:
   provider: releases
