@@ -2,12 +2,17 @@ install:
     - sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended 
     - sudo apt-get install chktex
     - sudo apt-get install texlive-bibtex-extra 
-    - sudo apt-get install biber
+
+before_script:
+    # as somehow no biber package is available for ubuntu 12.04 via apt, let's just download it directly
+    - wget "http://downloads.sourceforge.net/project/biblatex-biber/biblatex-biber/0.9.9/binaries/Linux/biber-linux_x86_64.tar.gz"
+    - tar xzf biber-linux_x86_64.tar.gz
+    - export PATH=$PATH:$PWD
     
 script:
     - mkdir _build
     - pdflatex -output-directory _build master.tex
-    - biber master
+    - ./biber master
     - pdflatex -output-directory _build master.tex
     - pdflatex -output-directory _build master.tex
 
