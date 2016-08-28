@@ -2,6 +2,7 @@ install:
     - sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended 
     - sudo apt-get install chktex
     - sudo apt-get install texlive-bibtex-extra 
+    - sudo apt-get install biblatex 
 
 before_script:
     # as somehow no biber package is available for ubuntu 12.04 via apt, let's just download it directly
