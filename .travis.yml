@@ -1,7 +1,8 @@
 install:
     - sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended 
     - sudo apt-get install chktex
-    - sudo apt-get install texlive-bibtex-extra biber
+    - sudo apt-get install texlive-bibtex-extra 
+    - sudo apt-get install biber
     
 script:
     - mkdir _build
