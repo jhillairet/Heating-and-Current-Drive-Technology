@@ -1,19 +1,20 @@
-install:
-    - sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended 
-    - sudo apt-get install chktex
-    - sudo apt-get install texlive-bibtex-extra 
-    - sudo apt-get install biblatex 
+sudo: required
+dist: trusty
+before_install:
+- sudo apt-get -qq update 
+- sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
+- sudo apt-get install texlive-bibtex-extra biblatex biber
 
-before_script:
+#before_script:
     # as somehow no biber package is available for ubuntu 12.04 via apt, let's just download it directly
-    - wget "http://downloads.sourceforge.net/project/biblatex-biber/biblatex-biber/current/binaries/Linux/biber-linux_x86_64.tar.gz"
+    # - wget "http://downloads.sourceforge.net/project/biblatex-biber/biblatex-biber/current/binaries/Linux/biber-linux_x86_64.tar.gz"
     #- wget "http://downloads.sourceforge.net/project/biblatex-biber/biblatex-biber/0.9.9/binaries/Linux/biber-linux_x86_64.tar.gz"
-    - tar xzf biber-linux_x86_64.tar.gz
-    - export PATH=$PATH:$PWD
+    #- tar xzf biber-linux_x86_64.tar.gz
+    #- export PATH=$PATH:$PWD
     
 script:
     - pdflatex -interaction=nonstopmode master.tex
-    - bibtex master
+    - biber master
     - pdflatex -interaction=nonstopmode master.tex
     - pdflatex -interaction=nonstopmode master.tex
 
