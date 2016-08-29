@@ -12,17 +12,16 @@ before_script:
     - export PATH=$PATH:$PWD
     
 script:
-    - mkdir _build
-    - pdflatex -interaction=nonstopmode -output-directory _build master.tex
+    - pdflatex -interaction=nonstopmode master.tex
     - bibtex master
-    - pdflatex -interaction=nonstopmode -output-directory _build master.tex
-    - pdflatex -interaction=nonstopmode -output-directory _build master.tex
+    - pdflatex -interaction=nonstopmode master.tex
+    - pdflatex -interaction=nonstopmode master.tex
 
 deploy:
   provider: releases
   api_key:
     secure: JJxinuqYrHySqN+zePYquu/j+T5LtJRoKDPH7mF5LAtH+LX7nMXWIwe2q8Fz1OW0+U5BkMpKw1EFZMrTG/H34hY90O7vLLqBA8APkgiDpW3xEoOEiYDohbjAd2SmnoSo4BFgz5/UrDAW2n+AM0yEtv86XEPKdZJQypEN65sAntcEbBKX1E2mBsinZb0Ct3gXzKqQzz0eEq5Qjn3tudrX9FBa40nBsOUeAeHIVoPyGG+X7cwye40gev513MNra0dYEBUSUxX3KmxaPHjYoTiy1fYHagMEmiQdW9OmCrd5DDRaTMJosqqgARUdof1xNrxn7A9Pb6roW2NF8q82zVuNJBjkzSiNFFgu0gcebSh5xG32+l86Tpo7V9UhafFX2qWayBj4ZKdxEQCoLN6SOOqY/13P8nJ4iP8AurTmMBXFb+jp5TVlaOMpILsqFdEvySFtO1p61nx3ClSrF4fegDjwIKvxls1rGlwwmMD0MVy76O1mvqkGnfTqCIaZ9Ych8EibrTM6/vatxigU112paq/WjSI6/jtpAveKGYptWGVG/DmqHAHoKEFthZb2q2m1zGUuQYP77mbrIsWO6HnwcBWUvMOTy4Ei4HxdzLnTfIVUURZJgdKIFIo6jcrdCHUmlyfJUbEqxUZgt1xc4YursqdOpctQWD/JxeCXjDL6nXlJeUQ=
-  file: _build/master.pdf
+  file: master.pdf
   skip_cleanup: true
   on:
     repo: jhillairet/Heating-and-Current-Drive-Technology
