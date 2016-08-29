@@ -3,10 +3,10 @@
 \usepackage[english]{babel}
 \usepackage{gensymb} % for ^{\circ} or \degree for degrees C
 
-\bibliographystyle{IEEEtran}
+%\bibliographystyle{IEEEtran}
 
-%\usepackage[backend=bibtext,citestyle=numeric-comp]{biblatex}
-%\addbibresource{Bibliography.bib}
+\usepackage[backend=biber,citestyle=numeric-comp]{biblatex}
+\addbibresource{Bibliography.bib}
 
 %\usepackage[options]{hyperref}
 
@@ -22,7 +22,7 @@
 \input{./Introduction.tex}
 \input{./LHCD.tex}
 
-%\printbibliography[heading=bibintoc]
-\bibliography{Bibliography}
+\printbibliography[heading=bibintoc]
+%\bibliography{Bibliography}
 
 \end{document}
