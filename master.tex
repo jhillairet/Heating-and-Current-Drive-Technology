@@ -3,13 +3,17 @@
 \usepackage[english]{babel}
 \usepackage{gensymb} % for ^{\circ} or \degree for degrees C
 
-\usepackage[backend=biber,style=ieee,citestyle=numeric-comp ]{biblatex}
+%\bibliographystyle{IEEEtran}
+
+\usepackage[backend=biber,citestyle=numeric-comp]{biblatex}
 \addbibresource{Bibliography.bib}
+
+%\usepackage[options]{hyperref}
 
 \title{Heating and Current Drive Science and Technology for Controlled Magnetic Fusion}
 
 % List of Authors
-\input{./Authors.tex}
+\include{./Authors.tex}
 
 \begin{document}
 \maketitle
@@ -19,5 +23,8 @@
 \input{./LHCD.tex}
 
 \printbibliography[heading=bibintoc]
+
+
+%\bibliography{Bibliography}
 
 \end{document}

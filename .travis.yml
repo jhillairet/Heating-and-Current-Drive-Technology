@@ -14,7 +14,7 @@ before_script:
 script:
     - mkdir _build
     - pdflatex -interaction=nonstopmode -output-directory _build master.tex
-    - ./biber master
+    - bibtex master
     - pdflatex -interaction=nonstopmode -output-directory _build master.tex
     - pdflatex -interaction=nonstopmode -output-directory _build master.tex
 
