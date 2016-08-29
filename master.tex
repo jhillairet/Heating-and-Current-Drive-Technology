@@ -3,13 +3,32 @@
 \usepackage[english]{babel}
 \usepackage{gensymb} % for ^{\circ} or \degree for degrees C
 
-%\bibliographystyle{IEEEtran}
-
-\usepackage[backend=biber,citestyle=numeric-comp]{biblatex}
+\usepackage[
+    backend=biber, 
+    style=authoryear,
+    url=false, 
+    doi=true
+]{biblatex}
 \addbibresource{Bibliography.bib}
 
-%\usepackage[options]{hyperref}
+\usepackage[]{hyperref}
+\hypersetup{
+    colorlinks=true,
+}
 
+\newrobustcmd*{\parentexttrack}[1]{%
+  \begingroup
+  \blx@blxinit
+  \blx@setsfcodes
+  \blx@bibopenparen#1\blx@bibcloseparen
+  \endgroup}
+
+\AtEveryCite{%
+  \let\parentext=\parentexttrack%
+  \let\bibopenparen=\bibopenbracket%
+  \let\bibcloseparen=\bibclosebracket}
+  
+  
 \title{Heating and Current Drive Science and Technology for Controlled Magnetic Fusion}
 
 % List of Authors
@@ -23,6 +42,5 @@
 \input{./LHCD.tex}
 
 \printbibliography[heading=bibintoc]
-%\bibliography{Bibliography}
 
 \end{document}
