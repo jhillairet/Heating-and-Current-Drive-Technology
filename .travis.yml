@@ -3,7 +3,7 @@ dist: trusty
 before_install:
 - sudo apt-get -qq update 
 - sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
-- sudo apt-get install texlive-bibtex-extra biblatex biber
+- sudo apt-get install texlive-bibtex-extra biber
 
 #before_script:
     # as somehow no biber package is available for ubuntu 12.04 via apt, let's just download it directly
