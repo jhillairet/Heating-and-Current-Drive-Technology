@@ -1,0 +1,1588 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.48.1 r9760"
+   width="1107.7029"
+   height="1051.8644"
+   version="1.0"
+   sodipodi:docname="klystron_cut.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="D:\Documents_J.Hillairet\Images_Photos\Klystrons\klystron_coupe.png"
+   inkscape:export-xdpi="140.00905"
+   inkscape:export-ydpi="140.00905">
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs5">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 552.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1110 : 552.5 : 1"
+       inkscape:persp3d-origin="555 : 368.33333 : 1"
+       id="perspective206" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern4486"
+       id="pattern5023"
+       patternTransform="matrix(0.5624132,-0.8268563,0.8268563,0.5624132,567.62098,760.55275)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5017"
+       id="pattern5021"
+       patternTransform="matrix(0.5624132,0.8268563,0.8268563,-0.5624132,615.81467,729.67358)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern4486"
+       id="pattern5017"
+       patternTransform="matrix(0.5624132,0.8268563,0.8268563,-0.5624132,567.87733,729.67358)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern4886"
+       id="pattern4890"
+       patternTransform="matrix(0.5420256,-0.8878869,0.8878869,0.5420256,630.70894,459.21899)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern4308"
+       id="pattern4886"
+       patternTransform="matrix(0.5159623,-0.8188991,0.8188991,0.5159623,527.45713,416.40864)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern4783"
+       id="pattern4789"
+       patternTransform="matrix(0.5624132,-0.8268563,0.8268563,0.5624132,574.65779,481.14097)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern4783"
+       id="pattern4787"
+       patternTransform="matrix(0.5624132,-0.8268563,0.8268563,0.5624132,592.52632,481.14097)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern4486"
+       id="pattern4783"
+       patternTransform="matrix(0.5624132,-0.8268563,0.8268563,0.5624132,572.49638,481.14097)" />
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible">
+      <path
+         id="path4506"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern4308"
+       id="pattern4486"
+       patternTransform="matrix(0.5624132,-0.8268563,0.8268563,0.5624132,567.36463,760.55275)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern4424"
+       id="pattern4455"
+       patternTransform="matrix(0.6884576,-0.8432964,0.8432964,0.6884576,357.56732,907.62367)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern4424"
+       id="pattern4453"
+       patternTransform="matrix(-0.6884576,-0.8432964,-0.8432964,0.6884576,696.10165,889.6792)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern4308"
+       id="pattern4449"
+       patternTransform="matrix(0.7933848,-1.0300461,1.0300461,0.7933848,477.02614,908.64906)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern4308"
+       id="pattern4447"
+       patternTransform="matrix(0.7409662,-1.0341414,1.0341414,0.7409662,447.2896,845.07441)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern4308"
+       id="pattern4424"
+       patternTransform="matrix(0.6884576,-0.8432964,0.8432964,0.6884576,509.83886,854.30299)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern4345"
+       id="pattern4420"
+       patternTransform="matrix(0.1295181,-0.3156383,0.3156383,0.1295181,935.63722,772.27116)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern4345"
+       id="pattern4349"
+       patternTransform="matrix(0.1295181,-0.3156383,0.3156383,0.1295181,999.72457,772.27116)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern4320"
+       id="pattern4345"
+       patternTransform="matrix(0.1295181,-0.3156383,0.3156383,0.1295181,933.63722,772.27116)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern4328"
+       id="pattern4341"
+       patternTransform="matrix(0.6455439,-0.731851,0.731851,0.6455439,1.5820312e-6,2.7343754e-7)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern4320"
+       id="pattern4330"
+       patternTransform="matrix(0.4405235,-0.6319416,0.6319416,0.4405235,886.98163,766.63147)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern4320"
+       id="pattern4328"
+       patternTransform="matrix(0.6455439,-0.731851,0.731851,0.6455439,886.98163,766.63147)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="187.18172"
+       height="85.0826"
+       patternTransform="translate(811.61491,833.79503)"
+       id="pattern3176">
+      <use
+         id="use3174"
+         transform="translate(102.09912,0)"
+         xlink:href="#path3158"
+         inkscape:tiled-clone-of="#path3158"
+         y="0"
+         x="0"
+         width="1"
+         height="1" />
+      <use
+         id="use3172"
+         transform="translate(85.0826,0)"
+         xlink:href="#path3158"
+         inkscape:tiled-clone-of="#path3158"
+         y="0"
+         x="0"
+         width="1"
+         height="1" />
+      <use
+         id="use3170"
+         transform="translate(68.06608,0)"
+         xlink:href="#path3158"
+         inkscape:tiled-clone-of="#path3158"
+         y="0"
+         x="0"
+         width="1"
+         height="1" />
+      <use
+         id="use3168"
+         transform="translate(51.04956,0)"
+         xlink:href="#path3158"
+         inkscape:tiled-clone-of="#path3158"
+         y="0"
+         x="0"
+         width="1"
+         height="1" />
+      <use
+         id="use3166"
+         transform="translate(34.03304,0)"
+         xlink:href="#path3158"
+         inkscape:tiled-clone-of="#path3158"
+         y="0"
+         x="0"
+         width="1"
+         height="1" />
+      <use
+         id="use3164"
+         transform="translate(17.01652,0)"
+         xlink:href="#path3158"
+         inkscape:tiled-clone-of="#path3158"
+         y="0"
+         x="0"
+         width="1"
+         height="1" />
+      <use
+         id="use3162"
+         xlink:href="#path3158"
+         inkscape:tiled-clone-of="#path3158"
+         y="0"
+         x="0"
+         width="1"
+         height="1" />
+      <path
+         inkscape:tile-cy="876.33633"
+         inkscape:tile-cx="854.15621"
+         inkscape:tile-h="85.0826"
+         inkscape:tile-w="85.0826"
+         id="path3158"
+         d="M 0.5,84.5826 L 84.5826,0.5"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="73.411329"
+       height="3.6816943"
+       patternTransform="translate(873.34231,839.94742)"
+       id="pattern4308">
+      <path
+         id="path4306"
+         d="M 1.3294443,2.35225 L 72.081884,2.35225"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:2.65888858px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline" />
+      <path
+         id="path4304"
+         d="M 1.3218543,0.5 L 72.074294,0.5"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="106.616"
+       height="12.741331"
+       patternTransform="translate(886.98163,766.63147)"
+       id="pattern4320">
+      <rect
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:3.49465847;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4318"
+         width="103.1213"
+         height="8.2720165"
+         x="1.7473755"
+         y="2.7219849" />
+      <rect
+         y="0.5"
+         x="0.5"
+         height="0.51269883"
+         width="105.61595"
+         id="rect4316"
+         style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="113.79378"
+       height="12.228632"
+       patternTransform="matrix(2.8203702,-0.9514216,0.9514216,2.8203702,886.98163,766.63147)"
+       id="pattern4338">
+      <rect
+         id="rect4324"
+         y="0"
+         x="0"
+         height="12.228632"
+         width="113.79378"
+         style="fill:url(#pattern4341);stroke:none" />
+    </pattern>
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-height="820"
+     inkscape:window-width="1076"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:zoom="0.48761573"
+     inkscape:cx="378.61793"
+     inkscape:cy="490.83811"
+     inkscape:window-x="0"
+     inkscape:window-y="216"
+     inkscape:current-layer="g5031"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     showgrid="false"
+     inkscape:window-maximized="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="bg"
+     style="display:none"
+     sodipodi:insensitive="true"
+     transform="translate(-3.8562622,-6.4673529)">
+    <image
+       sodipodi:absref="/home/julien/Documents_Reseau/Machines/TS/LHCD/TS_Klystrons_Emetteur_Tore/Klystrons/klystron_coupe_nb.png"
+       xlink:href="klystron_coupe_nb.png"
+       style="opacity:0.47346939"
+       y="-1.2147456"
+       x="-0.51623172"
+       id="image9"
+       height="1105"
+       width="1110" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="dessin"
+     style="display:inline"
+     transform="translate(-3.8562622,-6.4673529)">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4894"
+       width="369.65585"
+       height="5.6396871"
+       x="404.00665"
+       y="461.05029"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4892"
+       width="55.371471"
+       height="37.170662"
+       x="631.38855"
+       y="423.1106"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001" />
+    <path
+       id="path4888"
+       d="m 615.05237,400.19979 -20.80699,21.06334 0,14.50132 c 0,0 2.1752,2.90026 3.98786,2.90026 1.81267,0 10.87599,-10.51345 10.87599,-10.51345 l 18.12664,0 3.84837,-15.27791 50.14584,-0.22037 c 4.96928,-4.90662 4.51566,-6.11641 4.51566,-12.01244 l -35.34669,-0.22038 -35.34668,-0.22037 z"
+       style="fill:url(#pattern4890);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cccsccccccc"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:url(#pattern4886);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 557.98197,397.1236 24.65223,24.65223 0,14.50132 c 0,0 -2.1752,2.90026 -3.98786,2.90026 -1.81267,0 -10.87599,-10.51345 -10.87599,-10.51345 l -18.12664,0 -10.51345,-10.15092 18.85171,-21.38944 z"
+       id="path4884"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path4793"
+       style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 585.12794,474.73672 c 0,0.90633 6.88812,0.90633 6.88812,0 0,-0.90633 0.5438,-57.09891 0.5438,-57.09891 0,0 2.71899,-15.95145 7.43192,-23.92717 4.71293,-7.97572 -27.55249,-7.97572 -22.83956,0 4.71293,7.97572 7.43192,23.92717 7.43192,23.92717 0,0 0.5438,56.19258 0.5438,57.09891 z"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       d="m 397.78741,413.56881 0,9.25 146.15625,0 c 1.19185,-3.12885 2.68324,-6.28221 4.21875,-9.25 l -150.375,0 z m 282.86138,0.0937 c -1.00402,3.22033 -4.12279,6.38542 -7.01854,9.15625 l 100.46966,0 0,-9.25 -93.45112,0.0937 z"
+       id="rect5117"
+       sodipodi:nodetypes="cccccccccc"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 569.90157,830.20014 c 9.42585,-19.21424 14.67651,-70.6939 13.95144,-104.04692 -0.72507,-33.35302 8.44323,-40.25748 8.87598,-0.0121 0.36254,34.07808 4.36253,84.84482 13.06333,105.50919 6.7249,15.97164 -17.76411,15.58891 -17.76411,15.58891 0,0 -15.22638,4.35039 -18.12664,-17.03904 z"
+       id="path4488"
+       sodipodi:nodetypes="cssscc"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       d="m 543.3063,728.8821 c -1.43384,0 -2.59375,1.15993 -2.59375,2.59375 l 0,6.0625 c 0,1.43384 1.15993,2.56249 2.59375,2.5625 l 0.53125,0 c 3.62251,-1.52532 7.21232,-3.09162 11.03125,-4.375 2.72647,-0.91625 5.5147,-1.75229 8.3125,-2.5 2.7978,-0.74771 5.6236,-1.42726 8.46875,-1.96875 2.84515,-0.54149 5.69398,-0.95242 8.5625,-1.25 2.86852,-0.29759 5.75709,-0.45273 8.625,-0.46875 2.86791,-0.016 5.5729,0.10764 8.125,0.375 2.5521,0.26736 4.92992,0.66679 7.1875,1.1875 2.25758,0.52071 4.39067,1.16224 6.375,1.90625 1.98433,0.74401 3.83014,1.59397 5.5625,2.53125 1.73236,0.93728 3.34208,1.962 4.84375,3.0625 0.64075,0.46957 1.17974,1.00461 1.78125,1.5 l 9.3125,0 c 1.43384,0 2.59375,-1.12863 2.59375,-2.5625 l 0,-6.0625 c 0,-1.43384 -1.15993,-2.59375 -2.59375,-2.59375 l -88.71875,0 z"
+       id="path4475"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:nodetypes="ccssssccccc"
+       id="path4451"
+       d="m 680.93694,882.74506 -19.73891,-0.5127 c 0,0 -13.9059,-51.31938 -19.90007,-72.94029 -1.46491,-5.28392 -2.45729,-8.79406 -2.65867,-9.34786 -1.0254,-2.81985 -9.48493,-6.92144 -12.56113,-6.92144 -3.07619,0 -9.99762,6.92144 -12.81747,6.92144 -2.81984,0 -16.54924,-28.80037 -9.22857,-30.76193 8.97223,2.81984 33.06907,14.86827 39.73415,20.50795 3.58889,1.79445 22.3024,83.77546 22.3024,83.77546 l 14.86827,0 0,9.27937 z"
+       style="fill:url(#pattern4453);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:url(#pattern4447);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.04720688;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       d="m 494.53125,762.03125 0,103.625 c -3.50882,0.0603 -6.96875,0.15625 -6.96875,0.15625 l 0,9.75 c 0,-10e-6 16.86329,0 14.8125,0 l 0,-0.0312 0.3125,0 0,-113.5 -8.15625,0 z"
+       id="rect4441"
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:url(#pattern4455);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 492.70355,884.79586 19.73891,-0.5127 c 0,0 13.9059,-51.31938 19.90007,-72.94029 1.46491,-5.28392 2.45729,-8.79406 2.65867,-9.34786 1.0254,-2.81985 9.48493,-6.92144 12.56113,-6.92144 3.07619,0 9.99762,6.92144 12.81747,6.92144 2.81984,0 16.54924,-28.80037 9.22857,-30.76193 -8.97223,2.81984 -33.06907,14.86827 -39.73415,20.50795 -3.58889,1.79445 -22.3024,83.77546 -22.3024,83.77546 l -14.86827,0 0,9.27937 z"
+       id="path4422"
+       sodipodi:nodetypes="ccssssccccc"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:url(#pattern4420);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 548.02423,884.28316 c 0,-6.81258 0.25635,-58.96036 0.25635,-58.96036 0,0 3.33255,-5.63969 7.43414,-5.63969 4.10159,0 7.43414,5.63969 7.43414,5.63969 l -0.25637,58.83219 -14.86826,0.12817 z"
+       id="path4336"
+       sodipodi:nodetypes="ccsccc"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:nodetypes="ccsccc"
+       id="path4347"
+       d="m 612.36793,884.28316 0,-58.96036 c 0,0 3.33255,-5.63969 7.43414,-5.63969 4.10159,0 7.43414,5.63969 7.43414,5.63969 l -2e-5,59.21671 -14.86826,-0.25635 z"
+       style="fill:url(#pattern4349);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.99566817;stroke-opacity:1"
+       id="rect3132"
+       width="166.11441"
+       height="317.15836"
+       x="502.44482"
+       y="81.690231"
+       ry="12.960798"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.99566817;stroke-opacity:1"
+       id="rect4125"
+       width="30.505579"
+       height="19.314131"
+       x="531.6687"
+       y="62.121967"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.99566817;stroke-opacity:1"
+       id="rect4127"
+       width="41.272255"
+       height="11.435999"
+       x="526.02899"
+       y="60.088902"
+       ry="3.5578661"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001" />
+    <rect
+       y="62.121967"
+       x="611.13696"
+       height="19.314131"
+       width="30.505579"
+       id="rect5113"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.99566817;stroke-opacity:1"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001" />
+    <rect
+       ry="3.5578661"
+       y="60.088902"
+       x="605.49725"
+       height="11.435999"
+       width="41.272255"
+       id="rect5115"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.99566817;stroke-opacity:1"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001" />
+    <rect
+       style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-opacity:1"
+       id="rect6088"
+       width="79.468315"
+       height="31.274628"
+       x="550.63855"
+       y="484.63443"
+       ry="5.6396871"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       id="rect6090"
+       width="23.584145"
+       height="41.528603"
+       x="624.97986"
+       y="479.50745"
+       ry="5.1269879"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       id="rect6096"
+       width="15.380964"
+       height="151.75885"
+       x="373.24475"
+       y="270.83902"
+       ry="4.6142893"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       id="rect6100"
+       width="37.939713"
+       height="85.620705"
+       x="360.93997"
+       y="288.27078"
+       ry="8.7158794"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001" />
+    <rect
+       style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:0.96038145;stroke-opacity:1"
+       id="rect10947"
+       width="48.746006"
+       height="98.477798"
+       x="296.3201"
+       y="391.30344"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001" />
+    <rect
+       style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="rect10949"
+       width="41.015903"
+       height="59.473064"
+       x="254.81131"
+       y="408.755"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001" />
+    <rect
+       style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-opacity:1"
+       id="rect10951"
+       width="6.1523857"
+       height="83.057205"
+       x="248.65892"
+       y="395.93753"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001" />
+    <g
+       id="g11926"
+       transform="matrix(1.0466441,0,0,1.0722931,-30.27501,37.977209)"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001">
+      <rect
+         style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-opacity:1"
+         id="rect11922"
+         width="79.468315"
+         height="31.274628"
+         x="550.63855"
+         y="544.10748"
+         ry="5.6396871" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         id="rect11924"
+         width="23.584145"
+         height="41.528603"
+         x="624.97986"
+         y="538.98053"
+         ry="5.1269879" />
+    </g>
+    <g
+       transform="matrix(0.9430033,0,0,0.9877974,36.99514,6.5739722)"
+       id="g11930"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001">
+      <rect
+         ry="5.6396871"
+         y="544.10748"
+         x="550.63855"
+         height="31.274628"
+         width="79.468315"
+         id="rect11932"
+         style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-opacity:1" />
+      <rect
+         ry="5.1269879"
+         y="538.98053"
+         x="624.97986"
+         height="41.528603"
+         width="23.584145"
+         id="rect11934"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+    </g>
+    <g
+       transform="matrix(1.0310897,0,0,0.9637938,-20.179532,166.12905)"
+       id="g11936"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001">
+      <rect
+         ry="5.6396871"
+         y="544.10748"
+         x="550.63855"
+         height="31.274628"
+         width="79.468315"
+         id="rect11938"
+         style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-opacity:1" />
+      <rect
+         ry="5.1269879"
+         y="538.98053"
+         x="624.97986"
+         height="41.528603"
+         width="23.584145"
+         id="rect11940"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 547.10043,713.29811 c 0,0 -22.16604,0.94802 -24.74223,-2 -2.83892,-3.24867 -1.9689,-22.09685 -1.9689,-22.09685 l 16.40636,0.0311 c 0,0 -0.23243,3.57068 2.35646,5.36513 2.58889,1.79445 7.99911,1.26886 7.99911,1.26886 l -0.0508,17.43176 z"
+       id="path11942"
+       sodipodi:nodetypes="czcczcc"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="fill:#ffffff;fill-opacity:0.50462964;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect11944"
+       width="79.783218"
+       height="278.4512"
+       x="696.04999"
+       y="461.12872"
+       ry="5.640214"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001" />
+    <rect
+       ry="5.640214"
+       y="461.12872"
+       x="400.22321"
+       height="278.4512"
+       width="79.783218"
+       id="rect12915"
+       style="fill:#ffffff;fill-opacity:0.50462964;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001" />
+    <rect
+       style="fill:url(#pattern4330);fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect2190"
+       width="377.85904"
+       height="9.7412777"
+       x="398.87967"
+       y="740.47113"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001" />
+    <g
+       id="g4183"
+       transform="translate(-2.0507951,3.0761932)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 502.3853,923.76097 c 0,0 32.35955,-41.27225 61.83974,-51.78258 29.48018,-10.51032 65.88179,-10.51032 77.16117,-28.71113 11.27937,-18.20081 7.94683,-46.65559 2.05079,-61.26751 -5.89603,-14.61191 -9.99762,-52.55163 -55.88417,-52.29528 -45.88654,0.25635 -93.38626,38.96511 -93.38626,38.96511"
+       id="path4332"
+       sodipodi:nodetypes="cssssc"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#d4d4d4;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 568.78856,875.05459 -2e-5,-44.34845 c 0,0 7.43413,8.45953 18.96985,8.45953 11.79207,0 18.96985,-8.45953 18.96985,-8.45953 l 3e-5,44.60479 -37.93971,-0.25634 z"
+       id="path4334"
+       sodipodi:nodetypes="cczccc"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 586.88388,865.82165 c -0.0965,0.0219 -0.18468,0.0405 -0.28125,0.0625 -3.86727,0.8812 -7.75502,1.80233 -11.59375,2.84375 -3.83873,1.04142 -7.62748,2.18621 -11.3125,3.5 -1.84251,0.6569 -3.67485,1.43286 -5.53125,2.3125 -0.65301,0.30942 -1.31546,0.69721 -1.96875,1.03125 l 130.3125,0 0,-9.75 -99.625,0 z"
+       id="path4386"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 541.19346,884.75528 c -3.34028,2.52069 -6.60406,5.16884 -9.71875,7.90625 -0.10822,0.0951 -0.20463,0.18602 -0.3125,0.28125 l 156.625,0 0,-8.1875 -146.59375,0 z"
+       id="rect2196"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 556.74144,875.26505 c -1.20391,0.61558 -2.42376,1.21445 -3.625,1.90625 -3.70618,2.13441 -7.37907,4.60761 -10.96875,7.28125 -0.0118,0.009 -0.0195,0.0225 -0.0312,0.0312 l 139.28125,0 0,-9.21875 -124.65625,0 z"
+       id="rect2202"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect4416"
+       width="150.22075"
+       height="9.2285786"
+       x="513.72418"
+       y="1001.9475"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 531.60263,892.99209 c -0.29488,0.25602 -0.61381,0.49298 -0.90625,0.75 -3.33553,2.9315 -6.52502,5.93579 -9.46875,8.84375 -5.88745,5.81593 -10.84942,11.31025 -14.34375,15.34375 -3.45858,3.99223 -5.42785,6.47912 -5.46875,6.53125 l 0,77.74996 171.25,0 0,-109.21871 -141.0625,0 z"
+       id="path4414"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect2194"
+       width="185.59697"
+       height="9.2285786"
+       x="495.77975"
+       y="978.3634"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001" />
+    <path
+       style="fill:url(#pattern4449);fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 501.43131,884.53125 0,0.125 c -2.59173,-0.29929 -15.03125,0.0937 -15.03125,0.0937 l 0,8.5 c 0,-10e-6 16.83204,0 14.78125,0 l 0.25,30.75 8.28125,-9.74128 0,-29.72747 -8.28125,0 z"
+       id="path4426"
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 630.71787,750.27233 c 0.0126,0.0189 0.0187,0.0436 0.0312,0.0625 1.87455,2.81984 3.41518,5.7555 4.75,8.6875 1.33482,2.932 2.44093,5.85243 3.40625,8.65625 1.93063,5.60764 3.30724,10.72202 4.78125,14.375 0.737,1.82649 1.42914,3.88174 2.0625,6.09375 0.63336,2.21201 1.20484,4.59034 1.6875,7.09375 0.48266,2.50341 0.87136,5.11182 1.15625,7.8125 0.28489,2.70068 0.45995,5.47743 0.5,8.28125 0.0401,2.80382 -0.0607,5.65592 -0.3125,8.46875 -0.25184,2.81283 -0.6592,5.58478 -1.25,8.3125 -0.5908,2.72772 -1.33567,5.38903 -2.3125,7.9375 -0.97683,2.54847 -2.18383,5.00615 -3.59375,7.28125 -0.70496,1.13755 -1.48159,2.18513 -2.375,3.1875 -0.89341,1.00237 -1.90255,1.9313 -2.96875,2.8125 -1.0662,0.8812 -2.21414,1.72594 -3.4375,2.5 -1.22336,0.77406 -2.51014,1.50657 -3.875,2.1875 -2.72972,1.36186 -5.73564,2.55154 -8.9375,3.625 -3.20186,1.07346 -6.60741,2.00903 -10.15625,2.90625 -7.00906,1.77204 -14.58253,3.32717 -22.21875,5.0625 l 89.875,0 0,-115.34375 -46.8125,0 z"
+       id="path4431"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 522.31162,750.27233 -27.8125,0 0,18.375 c 0.065,-0.0529 2.94978,-2.3761 8.0625,-5.96875 2.58504,-1.81648 5.72272,-3.94615 9.3125,-6.21875 3.11508,-1.97208 6.70074,-4.08392 10.4375,-6.1875 z"
+       id="path4429"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:url(#pattern5023);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       d="m 599.43754,730.16241 0,9.90625 23.53125,0 c -0.60151,-0.4954 -1.1405,-1.03043 -1.78125,-1.5 -1.50167,-1.10051 -3.11139,-2.12522 -4.84375,-3.0625 -1.73236,-0.93729 -3.57817,-1.78724 -5.5625,-2.53125 -1.98433,-0.74402 -4.11742,-1.38554 -6.375,-1.90625 -1.5875,-0.36616 -3.24355,-0.66379 -4.96875,-0.90625 z m -23.375,0.375 c -1.38404,0.20323 -2.77577,0.42477 -4.15625,0.6875 -2.84515,0.54148 -5.67095,1.22104 -8.46875,1.96875 -2.7978,0.7477 -5.58603,1.58375 -8.3125,2.5 -1.29953,0.43671 -2.55572,0.91678 -3.8125,1.40625 l 0,2.96875 24.75,0 0,-9.53125 z"
+       id="path4466"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path4692"
+       d="m 157.91123,346.20576 78.75359,60.82297"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:28px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="13.787327"
+       y="354.40894"
+       id="text4756"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"><tspan
+         sodipodi:role="line"
+         id="tspan4758"
+         x="13.787327"
+         y="354.40894">RF Output</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       id="rect6098"
+       width="30.761929"
+       height="9.7412767"
+       x="365.04156"
+       y="414.90741"
+       ry="3.5888917"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001" />
+    <path
+       style="fill:url(#pattern4789);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       d="m 583.09935,451.70634 c -0.005,-1.69963 -1.99816,-4.81491 -4.08204,-4.81258 -2.17452,0.002 -4.06628,3.0303 -4.0821,4.81258 l 0,24.22547 8.16414,-1.63746 0,-22.58801 z"
+       id="path4781"
+       sodipodi:nodetypes="czcccc"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:nodetypes="czcccc"
+       id="path4785"
+       d="m 600.96788,451.70634 c -0.005,-1.69963 -1.99816,-4.81491 -4.08204,-4.81258 -2.17452,0.002 -4.06628,3.0303 -4.0821,4.81258 l 0,20.58801 8.16414,-1.99393 0,-18.59408 z"
+       style="fill:url(#pattern4787);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.00300002;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 566.31569,477.50306 0,251.31869 43.0625,0 0,-260.5 -43.0625,9.18131 z"
+       id="path4826"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.00058663;stroke-opacity:1;display:inline"
+       d="m 344.78604,423.1117 0,37.9375 199.1875,0 c -1.84564,-8.23925 -3.85729,-26.16545 -0.78125,-35.90625 0.21114,-0.6686 0.44267,-1.35224 0.6875,-2.03125 l -199.09375,0 z"
+       id="path4849"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.00058663;stroke-opacity:1;display:inline"
+       d="m 674.02275,422.38663 c -15.82608,13.6816 -32.86584,32.74083 -42.73671,38.38132 -0.16392,0.0937 -0.35404,0.18682 -0.53125,0.28125 l 145.21875,0 0,-37.9375 -101.95079,-0.72507 z"
+       id="rect6094"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       sodipodi:nodetypes="cscccc"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 487.14645,400.1475 0,12.9375 61.625,0 c 3.78647,-7.14184 7.5617,-12.66262 7.75,-12.9375 l -69.375,0 z m 69.4375,0 0,0 z"
+       id="rect4123"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g4902"
+       transform="translate(0.3625328,-47.32874)"
+       style="fill:#000000;fill-opacity:0.43055558"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001">
+      <rect
+         ry="0"
+         y="514.37097"
+         x="400.93048"
+         height="47.168289"
+         width="79.468315"
+         id="rect4896"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <path
+         id="path4898"
+         d="m 400.7181,514.37098 79.16798,47.13718"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path4900"
+         d="m 480.06735,514.22081 -79.64958,47.31846"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       transform="translate(0.3625328,-0.1994757)"
+       id="g4907"
+       style="fill:#000000;fill-opacity:0.43055558"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001">
+      <rect
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         id="rect4909"
+         width="79.468315"
+         height="47.168289"
+         x="400.93048"
+         y="514.37097"
+         ry="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 400.7181,514.37098 79.16798,47.13718"
+         id="path4911"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 480.06735,514.22081 -79.64958,47.31846"
+         id="path4913"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g4915"
+       transform="matrix(1,0,0,0.9624851,0.3625328,66.201992)"
+       style="fill:#000000;fill-opacity:0.43055558"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001">
+      <rect
+         ry="0"
+         y="514.37097"
+         x="400.93048"
+         height="47.168289"
+         width="79.468315"
+         id="rect4917"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <path
+         id="path4919"
+         d="m 400.7181,514.37098 79.16798,47.13718"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path4921"
+         d="m 480.06735,514.22081 -79.64958,47.31846"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       transform="matrix(1,0,0,0.9024174,0.3625328,142.74021)"
+       id="g4923"
+       style="fill:#000000;fill-opacity:0.43055558"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001">
+      <rect
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         id="rect4925"
+         width="79.468315"
+         height="47.168289"
+         x="400.93048"
+         y="514.37097"
+         ry="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 400.7181,514.37098 79.16798,47.13718"
+         id="path4927"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 480.06735,514.22081 -79.64958,47.31846"
+         id="path4929"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g4931"
+       transform="matrix(1,0,0,1.029892,0.3625328,120.03452)"
+       style="fill:#000000;fill-opacity:0.43055558"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001">
+      <rect
+         ry="0"
+         y="514.37097"
+         x="400.93048"
+         height="47.168289"
+         width="79.468315"
+         id="rect4933"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <path
+         id="path4935"
+         d="m 400.7181,514.37098 79.16798,47.13718"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path4937"
+         d="m 480.06735,514.22081 -79.64958,47.31846"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       transform="matrix(1,0,0,0.8722067,0.3625328,249.9857)"
+       id="g4939"
+       style="fill:#000000;fill-opacity:0.43055558"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001">
+      <rect
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         id="rect4941"
+         width="79.468315"
+         height="47.168289"
+         x="400.93048"
+         y="514.37097"
+         ry="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 400.7181,514.37098 79.16798,47.13718"
+         id="path4943"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 480.06735,514.22081 -79.64958,47.31846"
+         id="path4945"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       transform="translate(295.46424,-47.32874)"
+       id="g4947"
+       style="fill:#000000;fill-opacity:0.43055558"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001">
+      <rect
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         id="rect4949"
+         width="79.468315"
+         height="47.168289"
+         x="400.93048"
+         y="514.37097"
+         ry="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 400.7181,514.37098 79.16798,47.13718"
+         id="path4951"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 480.06735,514.22081 -79.64958,47.31846"
+         id="path4953"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g4955"
+       transform="translate(295.46424,-0.1994757)"
+       style="fill:#000000;fill-opacity:0.43055558"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001">
+      <rect
+         ry="0"
+         y="514.37097"
+         x="400.93048"
+         height="47.168289"
+         width="79.468315"
+         id="rect4957"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <path
+         id="path4959"
+         d="m 400.7181,514.37098 79.16798,47.13718"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path4961"
+         d="m 480.06735,514.22081 -79.64958,47.31846"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       transform="matrix(1,0,0,0.9624851,295.46424,66.201992)"
+       id="g4963"
+       style="fill:#000000;fill-opacity:0.43055558"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001">
+      <rect
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         id="rect4965"
+         width="79.468315"
+         height="47.168289"
+         x="400.93048"
+         y="514.37097"
+         ry="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 400.7181,514.37098 79.16798,47.13718"
+         id="path4967"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 480.06735,514.22081 -79.64958,47.31846"
+         id="path4969"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g4971"
+       transform="matrix(1,0,0,0.9024174,295.46424,142.74021)"
+       style="fill:#000000;fill-opacity:0.43055558"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001">
+      <rect
+         ry="0"
+         y="514.37097"
+         x="400.93048"
+         height="47.168289"
+         width="79.468315"
+         id="rect4973"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <path
+         id="path4975"
+         d="m 400.7181,514.37098 79.16798,47.13718"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path4977"
+         d="m 480.06735,514.22081 -79.64958,47.31846"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       transform="matrix(1,0,0,1.029892,295.46424,120.03452)"
+       id="g4979"
+       style="fill:#000000;fill-opacity:0.43055558"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001">
+      <rect
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         id="rect4981"
+         width="79.468315"
+         height="47.168289"
+         x="400.93048"
+         y="514.37097"
+         ry="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 400.7181,514.37098 79.16798,47.13718"
+         id="path4983"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 480.06735,514.22081 -79.64958,47.31846"
+         id="path4985"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g4987"
+       transform="matrix(1,0,0,0.8722067,295.46424,249.9857)"
+       style="fill:#000000;fill-opacity:0.43055558"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001">
+      <rect
+         ry="0"
+         y="514.37097"
+         x="400.93048"
+         height="47.168289"
+         width="79.468315"
+         id="rect4989"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <path
+         id="path4991"
+         d="m 400.7181,514.37098 79.16798,47.13718"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path4993"
+         d="m 480.06735,514.22081 -79.64958,47.31846"
+         style="fill:#000000;fill-opacity:0.43055558;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g5007"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001">
+      <path
+         sodipodi:nodetypes="cc"
+         id="path4995"
+         d="m 598.3195,390.81057 c 0,0 22.55875,-84.5953 69.21434,-99.97627"
+         style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 1;stroke-dashoffset:0"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 1;stroke-dashoffset:0"
+         d="m 593.65442,390.81057 c 0,0 33.88891,-167.65251 73.87942,-198.41444"
+         id="path4997"
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         id="path4999"
+         d="m 590.11633,390.29787 c 0,0 38.4524,-269.67957 72.80322,-305.05579"
+         style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 1;stroke-dashoffset:0"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 1;stroke-dashoffset:0"
+         d="m 578.81797,390.81057 c 0,0 -22.55875,-84.5953 -69.21434,-99.97627"
+         id="path5001"
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         id="path5003"
+         d="m 583.48305,390.81057 c 0,0 -33.88891,-167.65251 -73.87942,-198.41444"
+         style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 1;stroke-dashoffset:0"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 1;stroke-dashoffset:0"
+         d="m 587.02114,390.29787 c 0,0 -38.4524,-269.67957 -72.80322,-305.05579"
+         id="path5005"
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       id="path5015"
+       d="m 576.31889,758.25341 c -0.16551,1.72476 -5.40911,5.51927 -12.625,5.44434 -6.95954,-0.0749 -12.25981,-3.15052 -12.125,-5.44434 l 0,-8.09574 24.75,0 0,8.09574 z"
+       style="fill:url(#pattern5017);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       sodipodi:nodetypes="czcccc"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:nodetypes="czcccc"
+       style="fill:url(#pattern5021);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       d="m 624.25623,758.25341 c -0.16551,1.72476 -5.40911,5.51927 -12.625,5.44434 -6.95954,-0.0749 -12.25981,-3.15052 -12.125,-5.44434 l 0,-8.09574 24.75,0 0,8.09574 z"
+       id="path5019"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g5031"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001">
+      <path
+         sodipodi:nodetypes="cc"
+         id="path4492"
+         d="m 238.91765,224.18345 109.69144,80.05672"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+         d="M 825.27377,128.82146 675.94368,214.10823"
+         id="path4694"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend);display:inline"
+         d="M 789.88386,767.49141 594.61182,799.06296"
+         id="path4696"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend);display:inline"
+         d="m 214.82861,588.65466 203.40669,7.35656"
+         id="path4700"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend);display:inline"
+         d="m 214.8286,689.14362 297.74328,7.35655"
+         id="path4704"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend);display:inline"
+         d="m 384.99381,779.88658 145.98442,11.45814"
+         id="path4706"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend);display:inline"
+         d="M 793.65047,824.49611 601.25369,850.30982"
+         id="path4708"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend);display:inline"
+         d="M 379.4866,831.39317 548.02977,846.9529"
+         id="path4710"
+         inkscape:connector-curvature="0" />
+      <text
+         id="text4716"
+         y="769.29462"
+         x="805.54791"
+         style="font-size:28px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="769.29462"
+           x="805.54791"
+           id="tspan4718"
+           sodipodi:role="line">Electron Beam</tspan></text>
+      <text
+         id="text4720"
+         y="832.3996"
+         x="803.89825"
+         style="font-size:28px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="832.3996"
+           x="803.89825"
+           id="tspan4722"
+           sodipodi:role="line">Cathode</tspan></text>
+      <text
+         id="text4724"
+         y="839.422"
+         x="265.57797"
+         style="font-size:28px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="839.422"
+           x="265.57797"
+           id="tspan4726"
+           sodipodi:role="line">Wehnelt</tspan></text>
+      <text
+         id="text4728"
+         y="785.07593"
+         x="259.4256"
+         style="font-size:28px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="text-align:center;text-anchor:middle"
+           id="tspan4732"
+           y="785.07593"
+           x="259.4256"
+           sodipodi:role="line">Control Anode</tspan></text>
+      <text
+         id="text4736"
+         y="699.96796"
+         x="68.701637"
+         style="font-size:28px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="699.96796"
+           x="68.701637"
+           id="tspan4738"
+           sodipodi:role="line">RF Input</tspan></text>
+      <text
+         id="text4740"
+         y="581.02185"
+         x="114.84454"
+         style="font-size:28px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="text-align:center;text-anchor:middle"
+           y="581.02185"
+           x="114.84454"
+           id="tspan4742"
+           sodipodi:role="line">Coil</tspan><tspan
+           style="text-align:center;text-anchor:middle"
+           id="tspan4760"
+           y="616.02185"
+           x="114.84454"
+           sodipodi:role="line">(electromagnet)</tspan></text>
+      <text
+         id="text4744"
+         y="540.73608"
+         x="815.76819"
+         style="font-size:28px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="540.73608"
+           x="815.76819"
+           id="tspan4746"
+           sodipodi:role="line">Intermediate cavities</tspan></text>
+      <text
+         id="text4748"
+         y="138.05006"
+         x="840.82605"
+         style="font-size:28px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="138.05006"
+           x="840.82605"
+           id="tspan4750"
+           sodipodi:role="line">Collector</tspan></text>
+      <text
+         id="text4752"
+         y="232.38663"
+         x="61.015903"
+         style="font-size:28px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="232.38663"
+           x="61.015903"
+           id="tspan4754"
+           sodipodi:role="line">Ionic pump</tspan></text>
+      <text
+         id="text4762"
+         y="44.738869"
+         x="664.45764"
+         style="font-size:28px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="44.738869"
+           x="664.45764"
+           id="tspan4764"
+           sodipodi:role="line">Hot water</tspan></text>
+      <text
+         id="text4766"
+         y="44.63728"
+         x="375.28604"
+         style="font-size:28px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="44.63728"
+           x="375.28604"
+           id="tspan4768"
+           sodipodi:role="line">Cold water</tspan></text>
+      <path
+         sodipodi:nodetypes="cc"
+         id="path4770"
+         d="M 546.53153,7.4673529 546.15356,54.814406"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend);display:inline"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         id="path4772"
+         d="M 627.82552,56.857593 627.44755,9.51054"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend);display:inline"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend);display:inline"
+         d="M 803.40688,533.51431 654.07675,503.72543"
+         id="path4698"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend);display:inline"
+         d="m 367.18183,730.9042 192.12731,24.78831"
+         id="path5025"
+         inkscape:connector-curvature="0" />
+      <text
+         id="text5027"
+         y="737.90765"
+         x="274.80655"
+         style="font-size:28px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="737.90765"
+           x="274.80655"
+           id="tspan5029"
+           sodipodi:role="line">Anode</tspan></text>
+      <path
+         id="path2579"
+         d="M 803.40688,533.51431 656.97701,560.28055"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend);display:inline"
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend);display:inline"
+         d="M 803.40688,533.51431 658.42714,635.68737"
+         id="path2581"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path2583"
+         d="M 804.85702,403.0025 625.07413,442.81992"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend);display:inline"
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0" />
+      <text
+         xml:space="preserve"
+         style="font-size:28px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         x="815.76819"
+         y="410.22427"
+         id="text2585"><tspan
+           sodipodi:role="line"
+           id="tspan2587"
+           x="815.76819"
+           y="410.22427">Output (&quot;Catcher&quot;)</tspan><tspan
+           sodipodi:role="line"
+           x="815.76819"
+           y="445.22427"
+           id="tspan3212">cavity</tspan></text>
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend);display:inline"
+         d="M 822.28878,614.2344 613.79476,671.48359"
+         id="path4090"
+         inkscape:connector-curvature="0" />
+      <text
+         id="text4092"
+         y="621.90387"
+         x="835.66663"
+         style="font-size:28px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="621.90387"
+           x="835.66663"
+           id="tspan4094"
+           sodipodi:role="line">Drift tube</tspan></text>
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend);display:inline"
+         d="m 837.66974,698.31701 -178.75749,5.9793"
+         id="path3214"
+         inkscape:connector-curvature="0" />
+      <text
+         id="text3216"
+         y="704.92926"
+         x="852.6825"
+         style="font-size:28px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           id="tspan3220"
+           y="704.92926"
+           x="852.6825"
+           sodipodi:role="line">Input cavity</tspan></text>
+    </g>
+    <text
+       inkscape:export-ydpi="149.99001"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       id="text2589"
+       y="290.60315"
+       x="17.787327"
+       style="font-size:28px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         y="290.60315"
+         x="17.787327"
+         id="tspan2591"
+         sodipodi:role="line">RF Window</tspan></text>
+    <path
+       inkscape:export-ydpi="149.99001"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       sodipodi:nodetypes="cc"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       d="M 181.11333,288.20051 314.9719,385.27676"
+       id="path2593"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.08004439;stroke-opacity:1"
+       id="rect4121"
+       width="198.84239"
+       height="9.5730543"
+       x="487.04407"
+       y="390.53787"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:8, 2, 1, 2;stroke-dashoffset:0"
+       d="m 588.57824,24.230918 0,1033.600782"
+       id="path4418"
+       inkscape:export-filename="D:\Documents and settings\JH123456\Mes documents\Mes images\Klystrons\klystron-fr.png"
+       inkscape:export-xdpi="149.99001"
+       inkscape:export-ydpi="149.99001"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
