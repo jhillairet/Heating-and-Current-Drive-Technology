@@ -5,6 +5,7 @@
 \usepackage{graphicx}
 \usepackage[table,x11names]{xcolor}
 
+% Bibliography configuration
 \usepackage[
     backend=biber, 
     style=authoryear,
@@ -17,7 +18,7 @@
 \hypersetup{
     colorlinks=true,
 }
-
+% Add brackets [] around citations when using \parencite{} and authoryear format
 \newrobustcmd*{\parentexttrack}[1]{%
   \begingroup
   \blx@blxinit
@@ -40,7 +41,7 @@
 \maketitle
 \tableofcontents
 
-\input{./Introduction.tex}
+%\input{./Introduction.tex}
 \input{./LHCD.tex}
 
 \printbibliography[heading=bibintoc]
