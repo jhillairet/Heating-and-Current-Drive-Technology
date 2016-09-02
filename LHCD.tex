@@ -307,55 +307,58 @@ Theoretically, if the $n_{\parallel}$ spectrum of an antenna is known, one can e
 \subsection{LH systems and launchers performances}
 Mainly because of its relative simplicity, most of the LH launchers have been based on a “grill” configuration, as for example in the 1980' \parencite{Porkolab1984a, Gormezano1986a, Stevens1988}\footnote{It is a non exhaustive list.}
 
-Typical grill launchers have a high reflection coefficient (of the order of 20 to 40\%) but directivity higher than 80\%. Since all the waveguides can be feed by independent RF sources, and thus independently phased, such launchers have a wide flexibility in terms of operational space (excited spectrum) which is of great interest for physics studies. However, since each waveguide is independently power fed, the complexity of the launcher grows enormously with the number of output waveguides, leading to cumbersome transmission systems for multi-megawatt power levels. 
+Typical grill launchers have a high reflection coefficient (of the order of 20 to 40\%) but directivity higher than 80\%. Since all the waveguides can be feed by independent RF sources, and thus independently phased, such launchers have a wide flexibility in terms of operational space (excited spectrum) which is of great interest for physics studies. However, since each waveguide is independently power fed, the complexity of the launcher grows enormously with the number of output waveguides, leading to cumbersome transmission systems for multi-megawatt power levels (Table \ref{tab:grillperformances}). 
 
-Table 2.1 Waveguide number and maximum performances in some grill launchers.
-Launcher
-Total number of waveguides
-Max power [MW]
-PLT Grill 1 (1981-1984)  \parencite{Stevens1988}
-6 (0.8 GHz)
-TODO
-PLT Grill 4 (1986) \parencite{Stevens1988}
-16 (2.45 GHz)
-TODO
-COMPASS-D (1989)
-8 (1.3 GHz)
-TODO
-Alcator C \parencite{Porkolab1984a}
-16 (4.6 GHz)
-TODO
-Alcator C-Mod LH1 (2006)
-88 (4.6 GHz)
-TODO
+\begin{table}
+	{\rowcolors{2}{LightYellow1}{LightYellow2}
+		\begin{tabular}{| p{6cm} | p{5cm} |}
+			\hline 
+			Launcher & Total number of waveguides \\
+			\hline \hline
+PLT Grill 1 (1981-1984)  \parencite{Stevens1988} & 6 (0.8 GHz) \\
+			\hline
+PLT Grill 4 (1986) \parencite{Stevens1988} & 16 (2.45 GHz) \\
+			\hline
+COMPASS-D (1989) & 8 (1.3 GHz) \\
+			\hline
+Alcator C \parencite{Porkolab1984a} & 16 (4.6 GHz) \\
+			\hline
+Alcator C-Mod LH1 (2006) & 88 (4.6 GHz) \\
+			\hline
+		\end{tabular}
+	}
+\caption{Waveguide number and maximum performances in some grill launchers.}
+\label{tab:grillperformances}
+\end{table}
 
-Multijunction launchers at the contrary have led to hundred of waveguides launchers (see Table 2). The complexity of the multijunction design and manufacturing is balanced by the a simpler transmission line system behind the launcher. Because of the self-matching property, the typical reflection coefficient of multijunction launchers is generally less than 10\%. However, the multiple back and forth of the waves leads to an increase of the peak electric field in secondary waveguides. Moreover, since the phase shift is created by the built-in phase shifter inside the launcher, the flexibility of phase configuration is reduced in comparison to classic grill launchers. 
+Multijunction launchers at the contrary have led to hundred of waveguides launchers (see Table \ref{tab:multijunctionperformances}). The complexity of the multijunction design and manufacturing is balanced by the a simpler transmission line system behind the launcher. Because of the self-matching property, the typical reflection coefficient of multijunction launchers is generally less than 10\%. However, the multiple back and forth of the waves leads to an increase of the peak electric field in secondary waveguides. Moreover, since the phase shift is created by the built-in phase shifter inside the launcher, the flexibility of phase configuration is reduced in comparison to classic grill launchers. 
 
-Table 2.2 Waveguide number and maximum performances in some multijunction launchers 
-Launcher
-Total number of waveguides
-Max power [MW]
-Petula-B \parencite{Gormezano1985}
-4 (1.3 GHz)
-TODO
-JT60 CD-3 \parencite{Ikeda1989}
-24x4=96 (1.74-2.23 GHz)
-TODO
-JET \parencite{Litaudon1990a}
-2x2x2x6x8=384 (3.7 GHz)
-TODO
-Tore Supra C1 and C2 \parencite{Litaudon1992a}
-4x2x8x2=128 (3.7 GHz)
-TODO
-Tore Supra C3 \parencite{Bibet2000}
-6x3x8x2=288 (3.7 GHz)
-TODO
-EAST
-8x4x5=160 (2.45 GHz)
-TODO
+\begin{table}
+{\rowcolors{2}{LightYellow1}{LightYellow2}
+\begin{tabular}{| p{6cm} | p{5cm} |}
+	\hline 
+Launcher	& Total number of waveguides  \\ 
+	\hline \hline
+Petula-B \parencite{Gormezano1985}	& 4 (1.3 GHz)    \\ 
+	\hline 
+JT60 CD-3 \parencite{Ikeda1989}	& 24x4=96 (1.74-2.23 GHz)    \\ 
+	\hline 
+JET \parencite{Litaudon1990a}	& 2x2x2x6x8=384 (3.7 GHz)   \\ 
+	\hline 
+Tore Supra C1 and C2 \parencite{Litaudon1992a}	& 4x2x8x2=128 (3.7 GHz)   \\ 
+	\hline 
+Tore Supra C3 \parencite{Bibet2000}	& 6x3x8x2=288 (3.7 GHz)   \\ 
+	\hline 
+EAST & 8x4x5=160 (2.45 GHz) \\
+\hline
+\end{tabular} 
+}
+\caption{Waveguide number and maximum performances in some multijunction launchers}
+\label{tab:multijunctionperformances}
+\end{table}
+
 
 The PAM concept tested in the Tore Supra tokamak showed that reflected power lower than 5\% (i.e. high coupling efficiency) and continuous operations could be combined (cf. Figure \ref{fig:ts45472c4ir}) during long pulse operations. 
-
 \begin{figure}
 \centering
 \includegraphics[width=0.9\linewidth]{Figures/LHCD/TS45472_C4_IR}
