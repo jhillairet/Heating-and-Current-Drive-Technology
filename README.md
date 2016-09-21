@@ -4,7 +4,7 @@ This ia a open-source book on the physics and the technology of heating and curr
 The chapter on Lower Hybrid and Current Drive is an extended and fully referenced version of the one found in the [FuseNet Textbook Fusion Technology](http://www.fusenet.eu/node/367).
 
 ## Contributing
-The project is open to contributors! If you want to help creating a free open-source texbook on fusion physics and technologies, don't hesitate to contact me. The contribution workflow is the standard github workflow fork&pull requests. If you don't know where and how to start, please contact me or [follow this guide](https://guides.github.com/activities/contributing-to-open-source/)
+The project is open to contributors! If you want to help creating a free open-source texbook on fusion physics and technologies, don't hesitate to contact me. The contribution workflow is the standard github workflow fork&pull requests. If you don't know where and how to start, please contact me or [follow this guide](https://guides.github.com/activities/contributing-to-open-source/) or [this one](http://www.dataschool.io/simple-guide-to-forks-in-github-and-git/)
 
 
 ## Automatic Compilation Status on TravisCI =
