@@ -1,0 +1,524 @@
+%% LyX 2.2.1 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[french]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{babel}
+\makeatletter
+\addto\extrasfrench{%
+   \providecommand{\og}{\leavevmode\flqq~}%
+   \providecommand{\fg}{\ifdim\lastskip>\z@\unskip\fi~\frqq}%
+}
+
+\makeatother
+\begin{document}
+
+\section{\label{sec:annexe_relation_dispersion}Relation de dispersion}
+
+\subsection{Expressions de la relation de dispersion $\mathbf{k}(\omega)$}
+
+\subsubsection{Expression en fonction de $n^{2}$}
+
+On rappelle que dans un milieu diélectrique non-dispersif\footnote{La \emph{dispersion} est le phénomène affectant une onde dans un milieu
+\emph{dispersif}, c'est-à-dire dans lequel les différentes fréquences
+constituant l'onde ne se propagent pas à la même vitesse.}, isotrope, homogène et sans perte, la direction du vecteur d'onde
+$\mathbf{k}=k\mathbf{\hat{k}}$ est donnée par 
+\begin{equation}
+\mathbf{\hat{k}}\cdot\mathbf{E}=0\;\;\mathbf{H}=\frac{n}{Z_{0}}\hat{\mathbf{k}}\times\mathbf{E}\label{eq:vecteur_onde_vide}
+\end{equation}
+où $k=nk_{0}$ est le nombre d'onde, $\mathbf{\hat{k}}$ est le vecteur
+unitaire dans la direction du vecteur d'onde $\mathbf{k}$, $n=\sqrt{\varepsilon_{r}}$
+l'indice optique du milieu et $Z_{0}=\sqrt{\frac{\mu_{0}}{\varepsilon_{0}}}=\mu_{0}c_{0}=\frac{1}{\varepsilon_{0}c_{0}}$
+l'impédance du vide. Ainsi, le trièdre $\mathbf{E,}\mathbf{H,\hat{k}}$
+est direct. L'équation d'onde dans un tel milieu est 
+\begin{equation}
+\mathbf{k}\times\mathbf{k}\times\tilde{\mathbf{E}}+k^{2}\tilde{\mathbf{E}}=\mathbf{0}
+\end{equation}
+La condition pour que ce système de trois équations et trois inconnues
+$(\tilde{E}_{x},\tilde{E}_{y},\tilde{E}_{z})$ aient une solution,
+conduit à résoudre la \emph{relation de dispersion }entre le vecteur
+d'onde $\mathbf{k}$ et la fréquence $\omega$, i.e.$\mathbf{k}(\omega)$.
+Dans ce milieu, cette relation est simple : $k=\sqrt{\mu\varepsilon}\omega=\frac{c}{n}\omega$\cite[(7.4)]{Jackson1998}\footnote{Dans un matériau avec pertes $k^{2}=\mu\varepsilon\omega^{2}-j\omega\mu\sigma$\cite[§8.2]{Bladel2007}.}.
+Dans un plasma froid magnétisé, la situation est radicalement différente,
+car les courants de polarisation générés par les mouvements électroniques
+et ioniques modifient la polarisation des ondes planes ainsi que leur
+dispersion. Différentes branches de dispersion, ou \emph{modes}, apparaissent\cite[chap.8]{Rax2005}. 
+
+On rappelle l'expression des équations de Maxwell en régime harmonique
+pour une onde plane de vecteur d'onde $\mathbf{k}$ :
+
+\begin{eqnarray}
+\mathbf{k}\times\mathbf{\tilde{E}} & = & \omega\mu_{0}\mathbf{\tilde{H}}\\
+\mathbf{k}\times\mathbf{\tilde{H}} & \mathbf{=} & -\omega\varepsilon_{0}\mathbb{K}\cdot\mathbf{\tilde{E}}
+\end{eqnarray}
+Pour déterminer les propriétés de ces modes, on étudie les solutions
+de l'\emph{équation d'onde} déduite des deux précédentes équations\footnote{NB : L'équation d'onde ne dépend pas de la convention temporelle choisie.}
+:
+
+\begin{equation}
+\mathbf{n}\times\mathbf{n}\times\mathbf{\tilde{E}}+\mathbb{K}\cdot\mathbf{\tilde{E}}=\mathbf{0}\label{eq:Helmoltz}
+\end{equation}
+où $\mathbf{n}=\mathbf{k}/k_{0}$ correspond au vecteur d'indice de
+réfraction, dont la direction est celle du vecteur d'onde $\mathbf{k}$
+et l'amplitude celle de l'indice de réfraction. A priori, la matrice
+$\mathbb{K}$ dépend des trois composantes du vecteur d'onde $\mathbf{k}$.
+En choisissant le système de coordonnées cartésien l'équation \ref{eq:Helmoltz}
+peut s'écrire sous forme matricielle\footnote{On peut s'économiser un peu de calcul vectoriel grâce à un peu d'algèbre
+et le formalisme des dyadiques\cite{Belov2003,Lindell1995}. En utilisant
+l'identité ``BAC-CAB'', le double produit vectoriel s'écrit $\mathbf{n}\times\mathbf{n}\times\mathbf{\tilde{E}}=\mathbf{n}\left(\mathbf{n}\cdot\mathbf{\tilde{E}}\right)-\mathbf{\tilde{E}}\left(\mathbf{n}\cdot\mathbf{n}\right)=\mathbf{n}\left(\mathbf{n}\cdot\mathbf{\tilde{E}}\right)-n^{2}\mathbf{\tilde{E}}$.
+Avec l'opération dyadique $\mathbf{n}\left(\mathbf{n}\cdot\tilde{\mathbf{E}}\right)=\mathbf{nn}\cdot\mathbf{\tilde{E}}$
+et $\mathbb{I}=\mathbf{xx}+\mathbf{yy}=\mathbf{zz}$ l'opérateur dyadique
+unité vérifiant $\mathbf{\tilde{E}}=\mathbb{I}\cdot\tilde{\mathbf{E}}$on
+peut alors factoriser l'équation \ref{eq:Helmoltz} en un opérateur
+dyadique $\left(\mathbf{nn}-n^{2}\mathbb{I}+\mathbb{K}\right)\cdot\tilde{\mathbf{E}}=\mathbf{0}$
+qui donne directement l'expression matricielle de l'équation \ref{eq:relation_disp_matr}.} :
+\begin{equation}
+\left(\begin{array}{ccc}
+K_{xx}-n_{y}^{2}-n_{z}^{2} & K_{xy}+n_{x}n_{y} & K_{xz}+n_{x}n_{z}\\
+K_{yx}+n_{x}n_{y} & K_{yy}-n_{x}^{2}-n_{z}^{2} & K_{yz}+n_{y}n_{z}\\
+K_{zx}+n_{x}n_{z} & K_{zy}+n_{y}n_{z} & K_{zz}-n_{x}^{2}-n_{y}^{2}
+\end{array}\right)\left(\begin{array}{c}
+\tilde{E_{x}}\\
+\tilde{E}_{y}\\
+\tilde{E}_{z}
+\end{array}\right)=\mathbf{0}\label{eq:relation_disp_matr}
+\end{equation}
+ Si l'on suppose en plus que le vecteur d'onde $\mathbf{k}$ (ie.
+la propagation de l'onde) soit contenu dans le plan $x-z$ (ie $k_{y}=n_{y}=0$),
+l'équation précédente devient :
+
+\begin{equation}
+\left(\begin{array}{ccc}
+K_{xx}-n_{z}^{2} & K_{xy} & K_{xz}+n_{x}n_{z}\\
+K_{yx} & K_{yy}-n_{x}^{2}-n_{z}^{2} & K_{yz}\\
+K_{zx}+n_{x}n_{z} & K_{zy} & K_{zz}-n_{x}^{2}
+\end{array}\right)\left(\begin{array}{c}
+\tilde{E_{x}}\\
+\tilde{E}_{y}\\
+\tilde{E}_{z}
+\end{array}\right)=\mathbf{0}\label{eq:relation_disp_matr_full}
+\end{equation}
+Si le plasma est homogène (indépendant de $\mathbf{r}$) on peut exploiter
+l'équivalence entre toutes les directions perpendiculaires au champ
+magnétique statique pour prédire que $\mathbb{K}$ doit être fonction
+de $k_{\parallel}$et $k_{\perp}^{2}$ seulement. 
+
+\begin{figure}
+\begin{centering}
+\includegraphics[width=0.5\textwidth]{figures/geometrie_dispersion_plasma}
+\par\end{centering}
+\caption{Géométrie cartésienne du milieu plasma.\label{fig:G=0000E9om=0000E9trie-cart=0000E9sienne-plasma}}
+\end{figure}
+
+Si $\mathbb{K}$ est le tenseur de permittivité d'un plasma froid
+(\ref{eq:tenseur_stix}) définit dans l'annexe \ref{sec:Tenseur-de-permittivit=0000E9},
+c'est-à-dire tel que $z$ soit parallèle au champ magnétique (Figure
+\ref{fig:G=0000E9om=0000E9trie-cart=0000E9sienne-plasma}), alors
+on a:
+
+\begin{equation}
+\left(\begin{array}{ccc}
+S-n_{z}^{2} & jD & n_{x}n_{z}\\
+-jD & S-n_{x}^{2}-n_{z}^{2} & 0\\
+n_{x}n_{z} & 0 & P-n_{x}^{2}
+\end{array}\right)\left(\begin{array}{c}
+\tilde{E_{x}}\\
+\tilde{E}_{y}\\
+\tilde{E}_{z}
+\end{array}\right)=\mathbf{0}\label{eq:relation_disp_matr_froid}
+\end{equation}
+On définit $\theta$ comme l'angle entre le vecteur d'onde $\mathbf{k}$
+et la direction $\hat{\mathbf{e}}_{z}$ du champ magnétique, soit
+$n_{x}=n_{\perp}=n\sin\theta$ et $n_{z}=n_{\parallel}=n\cos\theta$,
+on a alors \footnote{Pour obtenir la version harmonique en convention $-j\omega t$, il
+faut remplacer $n^{2}\rightarrow-n^{2}$ et $j\rightarrow-j$.}:
+
+\begin{equation}
+\left(\begin{array}{ccc}
+S-n^{2}\cos^{2}\theta & jD & n^{2}\cos\theta\sin\theta\\
+-jD & S-n^{2} & 0\\
+n^{2}\cos\theta\sin\theta & 0 & P-n^{2}\sin^{2}\theta
+\end{array}\right)\left(\begin{array}{c}
+\tilde{E}_{x}\\
+\tilde{E}_{y}\\
+\tilde{E}_{z}
+\end{array}\right)=\mathbf{0}\label{eq:cold_plasma_dispersion_relation_matrix}
+\end{equation}
+
+L'existence de solutions non triviales à l'équation d'onde (les modes)
+(\ref{eq:relation_disp_matr_full}) nécessite que le déterminant de
+la matrice soit nul. Cette condition donne la \emph{relation de dispersion},
+qui pour un plasma froid peut s'écrire \cite[p.8-9]{Stix1992}\cite[§2.1.3]{Swanson2003}\cite[§18.1]{Brambilla1998}:
+
+\begin{equation}
+\boxed{An^{4}-Bn^{2}+C=0}\label{eq:cold_plasma_dispersion_relation_n}
+\end{equation}
+avec\footnote{Où l'on a remarqué que $S^{2}-D^{2}=RL$. Les expressions $A,B,C$
+ne dépendent pas de la convention temporelle choisie. }:
+
+\begin{eqnarray}
+A & = & S\sin^{2}\theta+P\cos^{2}\theta\\
+B & = & \left(S^{2}-D^{2}\right)\sin^{2}\theta+PS\left(1+\cos^{2}\theta\right)=RL\sin^{2}\theta+PS\left(1+\cos^{2}\theta\right)\\
+C & = & P\left(S^{2}-D^{2}\right)=PRL
+\end{eqnarray}
+Soit $n=n(\theta,\omega)=n(\hat{\mathbf{k}},\omega)$ la solution
+de la relation de dispersion pour une fréquence $\omega$ et une direction
+de propagation $\hat{\mathbf{k}}$ (ie. $\theta$) données. Une onde
+plane d'indice $n$ et de nombre d'onde $\mathbf{k}=n\frac{\omega}{c}\mathbf{\hat{k}}$
+peut se propager dans le plasma à la fréquence $\omega$ et dans la
+direction du vecteur unitaire $\mathbf{\hat{k}}$ en l'absence de
+sources extérieures (plus exactement avec des sources situées à l'infini).
+Une telle onde est appelée \emph{onde caractéristique} ou \emph{mode
+de propagation} (mode propre) du plasma.
+
+L'équation (\ref{eq:cold_plasma_dispersion_relation_n}) est une équation
+du second degré en $n^{2}$ ayant pour solution : 
+\begin{equation}
+n^{2}=\frac{B\pm\sqrt{\Delta}}{2A}\label{eq:solution_cold_plasma_dispersion_relation_n}
+\end{equation}
+où son déterminant $\Delta=B^{2}-4AC$ vaut : 
+\begin{equation}
+\Delta=(RL-PS)^{2}\sin^{4}\theta+4P^{2}D^{2}\cos^{2}\theta\label{eq:cold_plasma_determinant_dispersion_relation_n}
+\end{equation}
+
+Le déterminant (\ref{eq:cold_plasma_determinant_dispersion_relation_n})
+n'est jamais négatif, ce qui signifie que l'équation (\ref{eq:cold_plasma_dispersion_relation_n})
+a toujours deux solutions réelles et distinctes en $n^{2}$. Ainsi,
+les ondes planes dans un plasma froid sont soit purement propagatives
+($n^{2}>0$) soit purement évanescentes ($n^{2}<0$) ; les oscillations
+amorties sont exclues. La transition entre ces deux régimes a lieu
+aux coupures ($n=0$) et aux résonances ($n\to\infty$). 
+
+Les deux racines peuvent être confondues lorsque le déterminant être
+nul, dans les cas particulier suivant :
+\begin{itemize}
+\item En propagation parallèle, ie $\theta=0$, lorsque $P=0$ ;
+\item En propagation perpendiculaire, ie $\theta=\pi/2$, lorsque $RL=PS$.
+\end{itemize}
+Dans le cadre de l'approximation froide définie par l\textquoteright absence
+de \emph{dispersion spatiale}, c'est-à-dire lorsque les éléments du
+tenseur $\mathbb{K}$ ne dépendent pas de l'indice de réfraction $\mathbf{n}$
+(ie. du vecteur d'onde $\mathbf{k}$), l'équation (\ref{eq:cold_plasma_dispersion_relation_n})
+est une simple équation quadratique en $n^{2}$. Il existe donc deux
+solutions distinctes qui peuvent se propager dans le plasma ; un plasma
+froid est donc un milieu \emph{biréfringent} (les ondes peuvent être
+évanescentes ou non, selon les caractéristiques du plasma). Si on
+avait introduit des effets thermiques, les éléments du tenseur de
+permittivité dépendraient alors du vecteur d'onde et de nouveaux modes
+apparaitraient\cite[§1.2.2]{Dumont2007}. 
+
+\subsubsection{Expression en fonction de $\theta$.}
+
+L'équation de dispersion (\ref{eq:cold_plasma_dispersion_relation_n})
+peut être exprimée sous diverses formes équivalentes. La relation
+de dispersion (\ref{eq:cold_plasma_dispersion_relation_n}) peut être
+exprimée en fonction de l'angle $\theta$\cite[§18.2]{Brambilla1998}:
+
+\begin{equation}
+\tan^{2}\theta=-\frac{P\left(n^{2}-R\right)\left(n^{2}-L\right)}{\left(Sn^{2}-RL\right)\left(n^{2}-P\right)}\label{eq:cold_plasma_dispersion_relation_theta}
+\end{equation}
+En résolvant pour $n^{2}$ on obtient un cas particulier des équations
+d'Appleton-Hartree, et en particulier pour $D=0$
+\begin{equation}
+n^{2}=\begin{cases}
+\frac{PS}{S\sin^{2}\theta+P\cos^{2}\theta} & \mbox{extraordinary mode}\\
+S & \mbox{oridnary mode}
+\end{cases}\label{eq:cold_plasma_dispersion_relation_solution_n}
+\end{equation}
+
+
+\subsubsection{Expression en fonction de $n_{\parallel}$.}
+
+Lorsque le nombre d'onde $n_{\parallel}=n_{z}$ est définit par des
+conditions extérieures, comme la structure d'une antenne, et en supposant
+que la propagation est contrainte au plan (xOz) ($n_{y}=0$), la relation
+de dispersion peut être exprimée en fonction de $n_{\perp}^{2}=n_{x}^{2}=n^{2}-n_{\parallel}^{2}$.
+Ainsi, le déterminant de (\ref{eq:relation_disp_matr_froid}) donne
+une équations quadratique en $n_{\perp}^{2}$\cite[§18.2]{Brambilla1998}\footnote{En convention $-j\omega t$: $A_{1}n_{\perp}^{4}-B_{1}n_{\perp}^{2}+C_{1}=0$ }:
+
+\begin{equation}
+A_{1}n_{\perp}^{4}+B_{1}n_{\perp}^{2}+C_{1}=0\label{eq:cold_plasma_dispersion_relation_n_perp}
+\end{equation}
+avec 
+
+\begin{eqnarray}
+A_{1} & = & S\\
+B_{1} & = & \left(P+S\right)\left(n_{\parallel}^{2}-S\right)+D^{2}=RL+PS-n_{\parallel}^{2}(P+S)\\
+C_{1} & = & P\left(\left(n_{\parallel}^{2}-S\right)^{2}-D^{2}\right)=P(n_{\parallel}^{2}-R)(n_{\parallel}^{2}-L)
+\end{eqnarray}
+où on rappelle que $R=S+D$ et $L=S-D$. Les coupures, qui correspondent
+aux transitions entre propagation et évanescence, sont alors définies
+pour $n_{\perp}=0$. Les résonances pour $n_{\perp}\to\infty$. Comme
+précédemment, le déterminant de l'équation est toujours positif ou
+nul, l'équation (\ref{eq:cold_plasma_dispersion_relation_n_perp})
+possède donc deux solutions, qui peuvent éventuellement être complexes
+conjuguées selon les conditions (fréquence, densité, etc.). La solution
+s'exprime par \cite[§15.9.2]{Friedberg2007}:
+
+\begin{equation}
+n_{\perp}^{2}=-\frac{P}{2S}\left(D^{2}/P-S-n_{\parallel}^{2}\pm\sqrt{\left(D^{2}/P-S-n_{\parallel}^{2}\right)^{2}+\frac{4SD^{2}}{P}}\right)\label{eq:cold_plasma_solution_n_perp}
+\end{equation}
+La solution dont la valeur est la plus grande, c'est-à-dire pour laquelle
+la valeur de la vitesse de phase perpendiculaire $v_{\perp}=\omega/k_{\perp}$
+sera la plus petite, correspond à la branche dite \emph{lente}, l'autre
+branche étant la solution dite \emph{rapide}.
+
+\begin{figure}[h]
+\begin{centering}
+\includegraphics[width=0.9\textwidth]{figures/n_perp_vs_ne}\label{Flo:n_perp_vs_ne}\caption{Exemple de solutions de l'équation de dispersion pour $n_{\perp}^{2}$
+en fonction de la densité électronique $n_{e}$. \textbf{$n_{\parallel}=2.0$
+}et\textbf{ $B_{0}=2.95$~}T, f=3.7GHz.}
+\par\end{centering}
+\end{figure}
+
+Pour des valeurs de $\left|P\right|$ grande ($\omega\ll\omega_{pe}$),
+les deux racines (\ref{eq:cold_plasma_solution_n_perp}) peuvent s'approcher
+par au premier ordre en $\omega^{2}/\omega_{pe}^{2}$ (cf. \cite[p.222]{Brambilla1998}).
+De la même façon, dans le voisinage des fréquences LH, on peut faire
+l'hypothèse $D\approx0$. Dans ce cas, l'équation de dispersion s'écrit
+(avec la convention temporelle $e^{j\omega t}$):
+\begin{eqnarray}
+A_{1}n_{\perp}^{4}+B_{1}n_{\perp}^{2}+C_{1} & = & 0\label{eq:cold_plasma_dispersion_relation_n_perp_approx1}
+\end{eqnarray}
+avec
+\begin{eqnarray}
+A_{1} & = & S\\
+B_{1} & = & S^{2}+PS-n_{\parallel}^{2}(P+S)\\
+C_{1} & = & P(n_{\parallel}^{2}-S)^{2}
+\end{eqnarray}
+Les solutions de l'équation de dispersion \ref{eq:cold_plasma_dispersion_relation_n_perp_approx1}
+sont dans ce cas :
+\begin{eqnarray}
+n_{\perp}^{2}=n_{\perp,F}^{2} & = & -\left(S+n_{\parallel}^{2}\right)\label{eq:n_perp_fast_wave_solution_approximate}\\
+n_{\perp}^{2}=n_{\perp,S}^{2} & = & -\frac{P}{S}\left(S+n_{\parallel}^{2}\right)\label{eq:n_perp_slow_wave_solution_approximate}
+\end{eqnarray}
+Enfin, toujours au voisinage du domaine de plasma de bord, $S\approx1$
+d'où \ref{eq:cold_plasma_dispersion_relation_n_perp_approx1} :
+\begin{equation}
+n_{\perp}^{4}+\left(1-n_{\parallel}^{2}\right)\left(1+P\right)n_{\perp}^{2}+P\left(n_{\parallel}^{2}-1\right)^{2}=0
+\end{equation}
+qui a pour solutions:
+\begin{eqnarray}
+n_{\perp}^{2}=n_{\perp,F}^{2} & = & -\left(1-n_{\parallel}^{2}\right)\label{eq:n_perp_fast_wave_solution_approximate2}\\
+n_{\perp}^{2}=n_{\perp,S}^{2} & = & -P\left(1-n_{\parallel}^{2}\right)\label{eq:n_perp_slow_wave_solution_approximate2}
+\end{eqnarray}
+
+
+\subsection{Polarisation des champs}
+
+Chaque mode propre de la solution de dispersion possède une polarisation
+définie par la relation de dispersion exprimée sous forme matricielle
+(\ref{eq:relation_disp_matr_froid}). Ainsi, on déduit des deux dernières
+relations les relations existantes entre les composantes $\tilde{E}_{x}$
+et $\tilde{E}_{y}$\footnote{En convention $-j\omega t$ : $\frac{\tilde{E}_{y}}{\tilde{E}_{x}}=-\frac{jD}{S-n^{2}}$
+et $\frac{\tilde{E}_{z}}{\tilde{E}_{x}}=-\frac{n_{\perp}n_{\parallel}}{P-n_{\perp}^{2}}$.}:
+
+\begin{equation}
+\frac{\tilde{E}_{y}}{\tilde{E}_{x}}=\frac{jD}{S+n^{2}}\label{eq:relation_entre_composantes_X_Y}
+\end{equation}
+et entre les composantes $\tilde{E}_{x}$ et $\tilde{E}_{z}$:
+
+\begin{equation}
+\frac{\tilde{E}_{z}}{\tilde{E}_{x}}=\frac{n_{\perp}n_{\parallel}}{P+n_{\perp}^{2}}\label{eq:relation_entre_composantes_X_Z}
+\end{equation}
+
+En utilisant la relation issue de la première ligne de (\ref{eq:relation_disp_matr_froid}),
+on en déduit une expression générale pour le champ radial en fonction
+des composantes transverses y et z :
+\begin{equation}
+\tilde{E}_{x}=\frac{-jD\tilde{E}_{y}+n_{\perp}n_{\parallel}\tilde{E}_{z}}{S+n_{\parallel}^{2}}\label{eq:relation_entre_composantes_X_Y_Z}
+\end{equation}
+En injectant cette expression dans les deux précédentes, on trouve
+:
+
+\begin{eqnarray}
+\left[\left(S+n_{\perp}^{2}+n_{\parallel}^{2}\right)\left(S+n_{\parallel}^{2}\right)-D^{2}\right]\tilde{E}_{y}-jDn_{\perp}n_{\parallel}\tilde{E}_{z} & = & 0\label{eq:relation_entre_composantes_Y_Z_1}\\
+jDn_{\perp}n_{\parallel}\tilde{E}_{y}+\left[\left(P+n_{\perp}^{2}\right)\left(S+n_{\parallel}^{2}\right)-n_{\perp}^{2}n_{\parallel}^{2}\right]\tilde{E}_{z} & = & 0\label{eq:relation_entre_composantes_Y_Z_2}
+\end{eqnarray}
+
+
+\subsubsection{Polarisation dominante des modes lents et rapides}
+
+En prenant \ref{eq:relation_entre_composantes_Y_Z_1} pour $n_{\perp}^{2}=n_{\perp,F}^{2}$,
+on obtiens le condition de polarisation de l'onde rapide au premier
+ordre :
+
+\begin{equation}
+\tilde{E}_{z}=0\label{eq:polarisation_FastWave}
+\end{equation}
+En prenant \ref{eq:relation_entre_composantes_Y_Z_2} pour $n_{\perp}^{2}=n_{\perp,S}^{2}$,
+on obtiens la condition de polarisation de l'onde lente au premier
+ordre :
+
+\begin{equation}
+\tilde{E}_{y}=0\label{eq:polarisation_SlowWave}
+\end{equation}
+
+
+\subsubsection{Polarisation dans le plasma}
+
+En prenant \ref{eq:relation_entre_composantes_X_Z} pour $n_{\perp}^{2}=n_{\perp,S}^{2}$
+dans l'hypothèse ou $D\approx0$ et $P<0$, il vient
+\begin{equation}
+\frac{\tilde{E}_{z}}{\tilde{E}_{x}}=\frac{\left(-\frac{P}{S}\left(S+n_{\parallel}^{2}\right)\right)^{1/2}n_{\parallel}}{P-\frac{P}{S}\left(S+n_{\parallel}^{2}\right)}=\frac{\left(S\left(S+n_{\parallel}^{2}\right)\right)^{1/2}}{\left|P\right|^{1/2}n_{\parallel}}
+\end{equation}
+par conséquent, à mesure que la densité locale augmente ($\left|P\right|$
+augmente, et augmente plus vite que $S$), la polarisation dominante
+est radiale ($\tilde{E}_{x}$).
+
+\subsection{Vitesse de phase}
+
+\subsection{Vitesse de groupe}
+
+La vitesse de groupe est donnée par\cite[§7.2, §18.5]{Brambilla1998}:
+
+\begin{equation}
+\mathbf{v}_{g}\left(\mathbf{k}_{0}\right)=\left.\frac{\partial\omega}{\partial\mathbf{k}}\right|_{\mathbf{k}=\mathbf{k}_{0}}
+\end{equation}
+ou, en posant Soit $\mathcal{D}$ la partie gauche de l'équation \ref{eq:cold_plasma_dispersion_relation_n}:
+
+\begin{equation}
+\mathbf{v}_{g}\left(\mathbf{k}_{0}\right)=-\left.{\displaystyle \frac{\frac{\partial\mathcal{D}}{\partial\mathbf{k}}}{\frac{\partial\mathcal{D}}{\partial\omega}}}\right|_{\mathbf{k}=\mathbf{k}_{0}}
+\end{equation}
+
+Dans un milieu anisotrope comme le plasma froid, la vitesse de groupe,
+qui est la vitesse de propagation de l'énergie, n'est généralement
+pas colinéaire avec le vecteur d'onde \textbf{$\mathbf{k}$}. Aussi,
+on décompose génarelement la vitesse de groupe selon ses composantes
+parallèles et perpendiculaires au vecteur d'onde. Soit
+\begin{equation}
+\mathbf{v}_{g}=v_{gr}\mathbf{\hat{k}}+v_{g\theta}\mathbf{\hat{e}}_{\theta}
+\end{equation}
+avec $\mathbf{\hat{k}}=\mathbf{k}/k_{0}$ et $\mathbf{\hat{e}}_{\theta}=\mathbf{\hat{k}}\times\left(\mathbf{B}_{0}\times\mathbf{\hat{k}}\right)/B_{0}$
+le vecteur unité perpendiculaire à $\mathbf{\hat{k}}$ dans le plan
+formé par $\mathbf{B}_{0}$ et $\mathbf{\hat{k}}$, et
+
+\begin{equation}
+v_{gr}=-\frac{1}{k_{0}}\frac{\partial\mathcal{D}/\partial n}{\partial\mathcal{D}/\partial\omega}\quad\quad v_{g\theta}=-\frac{1}{nk_{0}}\frac{\partial\mathcal{D}/\partial\theta}{\partial\mathcal{D}/\partial\omega}
+\end{equation}
+
+Appliqué à \ref{eq:cold_plasma_dispersion_relation_n}, on a :
+\begin{equation}
+\end{equation}
+
+L'angle entre le vecteur d'onde $\mathbf{k}$ et la vitesse de groupe
+est alors 
+\begin{equation}
+\tan\alpha_{g}=\frac{v_{g\theta}}{v_{gr}}=\frac{1}{n}\frac{\partial\mathcal{D}/\partial\theta}{\partial\mathcal{D}/\partial n}=-\frac{1}{n}\frac{dn}{d\theta}
+\end{equation}
+
+
+\subsection{Réflexion/Transmission d'une onde plane par un plasma froid magnétisé}
+
+Soit une onde plane incidente en provenance d'un milieu de permittivité
+$\varepsilon^{i}$ sur un plasma magnétisé froid. Le champ incident
+a pour expression générale $\mathbf{E}^{i}e^{-j\mathbf{k}^{i}\cdot\mathbf{r}}$,
+le champ réfléchis $\mathbf{E}^{r}e^{-j\mathbf{k}^{r}\cdot\mathbf{r}}$
+et le champ transmis $\mathbf{E}^{t}e^{-j\mathbf{k}^{t}\cdot\mathbf{r}}$.
+Le vecteur d'onde de l'onde plane incidente $\mathbf{k}^{i}$ est
+contenu dans le plan $xOz$ et forme un angle $\theta^{i}$ avec l'axe
+$z$ (Figure \ref{fig:G=0000E9om=0000E9trie-reflexion}), i.e. $\mathbf{k}^{i}=\sqrt{\varepsilon^{i}}k_{0}\left(\sin\theta^{i}\mathbf{\hat{x}}+\cos\theta^{i}\mathbf{\hat{z}}\right)$.
+Supposons par ailleurs que le champ électrique \textbf{$\mathbf{E}^{i}$}
+soit également inclus dans ce même plan, ie. $\mathbf{E}^{i}=E^{i}\left(\cos\theta^{i}\mathbf{\hat{x}}-\sin\theta^{i}\mathbf{\hat{z}}\right)$
+(mode TM). Les conditions aux limites établissent que les composantes
+transverses du champ électrique doivent être continues à l'interface,
+soit\footnote{En toute généralité, on doit avoir $\mathbf{E}_{t}^{i}+\mathbf{E}_{t}^{r}=\mathbf{E}_{t}^{t}$
+à $x=0$ avec $\mathbf{E}_{t}=\mathbf{\hat{x}\times\left(\mathbf{E}\times\hat{x}\right)}$.}.
+\begin{equation}
+\mathbf{E}_{z}^{i}e^{-j\mathbf{k}^{i}\cdot\mathbf{r}}+\mathbf{E}_{z}^{r}e^{-j\mathbf{k}^{r}\cdot\mathbf{r}}=\mathbf{E}_{z}^{t}e^{-j\mathbf{k}^{t}\cdot\mathbf{r}}
+\end{equation}
+de plus pour que les deux cotés correspondent en tous points $x$
+et $y$ (\emph{phase matching}):
+\begin{equation}
+e^{-j\mathbf{k}^{i}\cdot\mathbf{r}}=e^{-j\mathbf{k}^{r}\cdot\mathbf{r}}=e^{-j\mathbf{k}^{t}\cdot\mathbf{r}}\quad\mbox{pour }x=0
+\end{equation}
+ce qui nécessite
+\begin{eqnarray}
+k_{z}^{i} & =k_{z}^{r} & =k_{z}^{t}\\
+k_{y}^{i} & =k_{y}^{r} & =k_{y}^{t}
+\end{eqnarray}
+Puisque par hypothèse $k_{y}^{i}=0$, alors toutes les composantes
+selon $y$ des vecteurs d'onde sont nulles, impliquant que les plans
+d'incidente et de réflexion correspondent au plan $xOz$. D'autre
+part, puisque le milieu des ondes incidentes et réfléchies est le
+même, on a également $\theta^{i}=\theta^{r}$. 
+
+\begin{figure}[h]
+\begin{centering}
+\includegraphics[width=0.6\textwidth]{figures/geometrie_reflexionTransmission_plasma}\caption{Géométrie du problème.\label{fig:G=0000E9om=0000E9trie-reflexion}}
+\par\end{centering}
+\end{figure}
+
+Au voisinage des fréquences LH, le milieu plasma peut s'approcher
+par un milieu diélectrique uniaxe de tenseur de permittivité relative
+\begin{equation}
+\mathbb{K}=\left(\begin{array}{ccc}
+S & 0 & 0\\
+0 & S & 0\\
+0 & 0 & P
+\end{array}\right)=S\left(\mathbf{\hat{x}\mathbf{\hat{x}}+\mathbf{\hat{y}}\mathbf{\hat{y}}}\right)+P\mathbf{\,\hat{z}}\mathbf{\hat{z}}
+\end{equation}
+
+Dans un milieu biréfringent, le vecteur de Poynting n'est pas dirigé
+selon le vecteur d'onde $\mathbf{k}$ et le champ électrique n'est
+pas orthogonal à $\mathbf{k}$. La simple relation de dispersion $k=n\frac{\omega}{c}$
+n'est donc plus valide. La relation de dispersion d'un tel milieu
+donne, on l'a vu, les deux solutions, données par exemple par l'équation
+\ref{eq:cold_plasma_dispersion_relation_solution_n}. En ce qui concerne
+l'onde lente, l'indice perpendiculaire selon $x$ a pour expression
+d'après la solution de l'équation de dispersion :
+\begin{equation}
+n_{x}^{2}=-\frac{P}{S}\left(n_{z}^{2}-S\right)
+\end{equation}
+
+En utilisant l'égalité tirée de la condition de \emph{phase matching}
+on a alors
+\begin{equation}
+n_{x}^{2}=-\frac{P}{S}\left(S+\varepsilon^{i}\cos^{2}\theta^{i}\right)\rightarrow n_{x}=\pm\sqrt{\frac{\left|P\right|}{S}\left(\varepsilon^{i}\cos^{2}\theta^{i}-S\right)}
+\end{equation}
+La direction du nombre d'onde dans le plasma et le signe de l'équation
+précédente reste à déterminer. Pour choisir le signe correct, on doit
+choisir le signe du flux de puissance (vecteur de Poynting) depuis
+l'interface vers le plasma. D'après l'équation d'onde, on déduit
+\begin{eqnarray}
+n_{x}n_{z}E_{x}^{t} & = & \left(P+n_{x}^{2}\right)E_{z}^{t}\\
+\end{eqnarray}
+et en utilisant les conditions de continuité du champ électrique et
+de la densité flux électrique: 
+\begin{eqnarray}
+\left(E^{r}-E^{i}\right)\sin\theta^{i} & = & E_{z}^{t}\\
+\varepsilon^{i}\left(E^{r}+E^{i}\right)\cos\theta^{i} & = & SE_{x}^{t}
+\end{eqnarray}
+On dispose maintenant de trois équations et trois inconnues ($E_{x}^{t},E_{z}^{t},E^{r}$)
+qui nous permet de résoudre le problème: 
+\begin{eqnarray}
+E_{x}^{t} & = & \frac{P+n_{x}^{2}}{n_{x}n_{z}}E_{z}^{t}\\
+E_{z}^{t} & = & \left(E^{r}-E^{i}\right)\sin\theta^{i}\\
+E^{r} & = & ...
+\end{eqnarray}
+ Pour que le flux de puissance soit positif, on doit avoir
+\begin{equation}
+\mathbf{\hat{x}\cdot}\mathbf{S}^{t}>0\rightarrow\mathbf{\hat{x}\cdot\left(\mathbf{E}^{t}\times\mathbf{H}^{t}\right)/2}
+\end{equation}
+or,
+
+\begin{eqnarray}
+\mathbf{\hat{x}\cdot}\mathbf{S}^{t} & = & \mathbf{\hat{x}\cdot\left(\mathbf{E}^{t}\times\mathbf{H}^{t}\right)/2}\\
+ & = & \mathbf{H}^{t}\cdot\left(\mathbf{\hat{x}\times}\mathbf{E}^{t}\right)/2\\
+ & = & \frac{1}{\omega\mu_{0}}\left(k_{z}E_{x}^{t}-k_{x}E_{z}^{t}\right)\cdot\left(-E_{z}^{t}\right)/2\mathbf{\hat{y}}\\
+ & = & \frac{-k_{0}}{\omega\mu_{0}}\left(\frac{P+n_{x}^{2}}{n_{x}}-n_{x}\right)\cdot\left(E_{z}^{t}\right)^{2}/2\mathbf{\hat{y}}\\
+ & = & \frac{-k_{0}}{\omega\mu_{0}}\frac{P}{n_{x}}\cdot\left(E_{z}^{t}\right)^{2}/2\mathbf{\hat{y}}
+\end{eqnarray}
+
+Pour que la dernière expression soit positive, il est nécessaire que
+$n_{x}>0$ (car $P<0$). C'est donc la racine positive qui doit être
+choisie ==> Problème: cela devrait être la négative !:
+\begin{equation}
+n_{x}=\pm\sqrt{\frac{\left|P\right|}{S}\left(\varepsilon^{i}\cos^{2}\theta^{i}-S\right)}
+\end{equation}
+
+Cela démontre que l'onde est backward, dans la mesure où 
+\end{document}
