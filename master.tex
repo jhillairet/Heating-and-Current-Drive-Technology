@@ -5,6 +5,7 @@
 \usepackage{graphicx}
 \usepackage[table,x11names]{xcolor}
 \usepackage{tabularx} % smarter arrays
+\usepackage{amsmath}
 
 % Bibliography configuration
 \usepackage[
@@ -31,9 +32,13 @@
   \let\parentext=\parentexttrack%
   \let\bibopenparen=\bibopenbracket%
   \let\bibcloseparen=\bibclosebracket}
-  
-  
+
 \title{Heating and Current Drive Science and Technology for Controlled Magnetic Fusion}
+
+% convenient differential operator typesetting according to 
+% https://tex.stackexchange.com/questions/60545/should-i-mathrm-the-d-in-my-integrals
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+\newcommand*\Diff[1]{\mathop{}\!\mathrm{d^#1}}
 
 % List of Authors
 \include{./Authors}
@@ -43,7 +48,9 @@
 \tableofcontents
 
 %\input{./Introduction.tex}
-\input{./LHCD.tex}
+\input{./RF_Fundamentals.tex}
+
+%\input{./LHCD.tex}
 
 \printbibliography[heading=bibintoc]
 
