@@ -1,34 +1,19 @@
 \section{Dispersion Relation}
-\subsection{Introduction}
-\subsection{Cold plasma dispersion relation}
-\subsection{Plasma waves zoo}
+\subsection{Vacuum dispersion relation}
+In a non-dispersive isotropic homogeneous non-lossy dielectric medium, such as vacuum (or air), the wavevector $\mathbf{k}=k\mathbf{\hat{k}}$ direction is given by:
+\begin{equation}
+ \mathbf{\hat{k}}\cdot\mathbf{E}=0
+ \;\;\;\;\;\;
+ \mathbf{H}=\frac{n}{Z_{0}}\hat{\mathbf{k}}\times\mathbf{E}\label{eq:vecteur_onde_vide}
+\end{equation}
+where $\mathbf{\hat{k}}$ the unit vector in the direction of $\mathbf{k}$, $k=|\mathbf{k}|=n k_{0}$ is the wavenumber and $n=\sqrt{\varepsilon_{r}}$ the medium optical index. $Z_{0}=\sqrt{\frac{\mu_{0}}{\varepsilon_{0}}}=\mu_{0}c_{0}=\frac{1}{\varepsilon_{0}c_{0}}$ is the \emph{vacuum impedance}. The wave equation in such a medium is:
+\begin{equation}
+ \mathbf{k} \times \mathbf{k} \times \mathbf{E} + k^{2} \mathbf{E} = \mathbf{0}
+\end{equation}
 
-% \section{\label{sec:annexe_relation_dispersion}Relation de dispersion}
-% 
-% \subsection{Expressions de la relation de dispersion $\mathbf{k}(\omega)$}
-% 
-% \subsubsection{Expression en fonction de $n^{2}$}
-% 
-% On rappelle que dans un milieu diélectrique non-dispersif\footnote{La \emph{dispersion} est le phénomène affectant une onde dans un milieu
-% \emph{dispersif}, c'est-à-dire dans lequel les différentes fréquences
-% constituant l'onde ne se propagent pas à la même vitesse.}, isotrope, homogène et sans perte, la direction du vecteur d'onde
-% $\mathbf{k}=k\mathbf{\hat{k}}$ est donnée par 
-% \begin{equation}
-% \mathbf{\hat{k}}\cdot\mathbf{E}=0\;\;\mathbf{H}=\frac{n}{Z_{0}}\hat{\mathbf{k}}\times\mathbf{E}\label{eq:vecteur_onde_vide}
-% \end{equation}
-% où $k=nk_{0}$ est le nombre d'onde, $\mathbf{\hat{k}}$ est le vecteur
-% unitaire dans la direction du vecteur d'onde $\mathbf{k}$, $n=\sqrt{\varepsilon_{r}}$
-% l'indice optique du milieu et $Z_{0}=\sqrt{\frac{\mu_{0}}{\varepsilon_{0}}}=\mu_{0}c_{0}=\frac{1}{\varepsilon_{0}c_{0}}$
-% l'impédance du vide. Ainsi, le trièdre $\mathbf{E,}\mathbf{H,\hat{k}}$
-% est direct. L'équation d'onde dans un tel milieu est 
-% \begin{equation}
-% \mathbf{k}\times\mathbf{k}\times\tilde{\mathbf{E}}+k^{2}\tilde{\mathbf{E}}=\mathbf{0}
-% \end{equation}
-% La condition pour que ce système de trois équations et trois inconnues
-% $(\tilde{E}_{x},\tilde{E}_{y},\tilde{E}_{z})$ aient une solution,
-% conduit à résoudre la \emph{relation de dispersion }entre le vecteur
-% d'onde $\mathbf{k}$ et la fréquence $\omega$, i.e.$\mathbf{k}(\omega)$.
-% Dans ce milieu, cette relation est simple : $k=\sqrt{\mu\varepsilon}\omega=\frac{c}{n}\omega$\cite[(7.4)]{Jackson1998}\footnote{Dans un matériau avec pertes $k^{2}=\mu\varepsilon\omega^{2}-j\omega\mu\sigma$\cite[§8.2]{Bladel2007}.}.
+The condition for that system of 3 equations and 3 unknowns $(E_{x},E_{y},E_{z})$ to have a non-trivial solution, consists in solving the \emph{dispersion relation} between the wavevector $\mathbf{k}$ and the angular frequency $\omega$, i.e. $\mathbf{k}(\omega)$. In this medium, this relation is simple (TODO demo): $k=\sqrt{\mu\varepsilon}\omega=\frac{c}{n}\omega$\parencite[(7.4)]{Jackson1998}\footnote{While in a lossy medium $k^{2}=\mu\varepsilon\omega^{2}-j\omega\mu\sigma$ \parencite[§8.2]{Bladel2007}.}.
+
+
 % Dans un plasma froid magnétisé, la situation est radicalement différente,
 % car les courants de polarisation générés par les mouvements électroniques
 % et ioniques modifient la polarisation des ondes planes ainsi que leur
@@ -38,8 +23,8 @@
 % pour une onde plane de vecteur d'onde $\mathbf{k}$ :
 % 
 % \begin{eqnarray}
-% \mathbf{k}\times\mathbf{\tilde{E}} & = & \omega\mu_{0}\mathbf{\tilde{H}}\\
-% \mathbf{k}\times\mathbf{\tilde{H}} & \mathbf{=} & -\omega\varepsilon_{0}\mathbb{K}\cdot\mathbf{\tilde{E}}
+% \mathbf{k}\times\mathbf{E} & = & \omega\mu_{0}\mathbf{H}\\
+% \mathbf{k}\times\mathbf{H} & = & -\omega\varepsilon_{0}\mathbf{K}\cdot\mathbf{E}
 % \end{eqnarray}
 % Pour déterminer les propriétés de ces modes, on étudie les solutions
 % de l'\emph{équation d'onde} déduite des deux précédentes équations\footnote{NB : L'équation d'onde ne dépend pas de la convention temporelle choisie.}

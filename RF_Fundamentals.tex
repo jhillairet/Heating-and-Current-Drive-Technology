@@ -169,14 +169,26 @@ Thus, the Maxwell equations (\ref{eq:Maxwell-Faraday}, \ref{eq:Maxwell-Ampere}, 
 The constitutive relationships become in AC:
 \begin{subequations}
  \begin{align}
-  \mathbf{D} =& \varepsilon(\omega) \mathbf{E} \\
-  \mathbf{B} =& \mu(\omega) \mathbf{H} \\
-  \mathbf{J} =& \sigma(\omega) \mathbf{E}
+  \mathbf{D} =& \boldsymbol{\varepsilon}(\omega) \mathbf{E} \\
+  \mathbf{B} =& \boldsymbol{\mu}(\omega) \mathbf{H} \\
+  \mathbf{J} =& \boldsymbol{\sigma}(\omega) \mathbf{E}
  \end{align}
 \end{subequations}
-where $\varepsilon(\omega)$ is the \emph{complex permittivity}, $\mu(\omega)$ the \emph{complex permeability} and $\sigma(\omega)$ the \emph{complex conductivity} of the media. 
+where $\boldsymbol{\varepsilon}(\omega)$ is the \emph{complex permittivity}, $\boldsymbol{\mu}(\omega)$ the \emph{complex permeability} and $\boldsymbol{\sigma}(\omega)$ the \emph{complex conductivity} of the media. 
 
 Note the previous equations do not depend of time but of frequency $\omega$. Finally, when the time-excitation has an arbitrary time dependence, electromagnetic fields can be determined by superposition principle (Fourier transform). 
+
+Expressing the previous equations in terms of $\mathbf{E}$ and $\mathbf{H}$ only leads to:
+\begin{subequations}
+ \begin{align}
+  \boldsymbol{\nabla} \times \mathbf{H} &= \left(j\omega\boldsymbol{\varepsilon}(\omega) + \boldsymbol{\sigma}(\omega) \right) \mathbf{E}  \label{eq:Maxwell-Faraday-Harmonic} \\
+  \boldsymbol{\nabla} \times \mathbf{E} &= -j\omega\boldsymbol{\mu}(\omega) \mathbf{H}  \label{eq:Maxwell-Ampere-Harmonic} \\
+  \boldsymbol{\nabla} \cdot (\boldsymbol{\varepsilon}(\omega) \mathbf{E}) &= Q \label{eq:Maxwell-Gauss-Harmonic} \\
+  \boldsymbol{\nabla} \cdot (\boldsymbol{\mu}(\omega) \mathbf{H} ) &= 0 \label{eq:Maxwell-Gauss-Magnetism-Harmonic} 
+ \end{align}
+
+\end{subequations}
+
 
 \section{Transmission Line Theory}
 
