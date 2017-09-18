@@ -5,6 +5,13 @@
 \section{Introduction}
 In this book we will the International System (SI) of units, which differs from most of the plasma physics and waves into plasma reference books in which CGS units are used instead. In this system of units, the unit of length is the meter, the unit of time is the second and the unit of mass is the kilogram. This choice is motivated by the fact that most engineering tools such as electromagnetic solvers also use SI units by default. Moreover, these units are also the one used in practice when performing measurements. 
 
+
+% ###########################################################################
+% ###########################################################################
+% ###########################################################################
+\section{The Decibel}
+[1] E.A. Wolff, R. Kaul, Microwave engineering and systems applications, 1988. doi:10.1109/MAP.1989.6095665.
+
 % ###########################################################################
 % ###########################################################################
 % ###########################################################################
@@ -14,14 +21,14 @@ In this book we will the International System (SI) of units, which differs from 
 \subsection{Maxwell Equations}
 We shall start the Maxwell equations is their most general form, before recasting them to fit our needs. The usual electromagnetic field quantities are expressed in terms of six quantities that are:
 \begin{itemize}
- \item $\mathcal{E}$: the electric field intensity (in $V/m$)
- \item $\mathcal{H}$: the magnetic field intensity (in $A/m$)
- \item $\mathcal{D}$: the electric flux density (in $A\cdot s/m^2=C/m^2$)
- \item $\mathcal{B}$: the magnetic flux density (in $V\cdot s/m^2=Wb/m^2$, also known as Tesla $T$)
- \item $\mathcal{J}$: the electric current density (in $A/m^2$)
+ \item $\boldsymbol{\mathcal{E}}$: the electric field intensity (in $V/m$)
+ \item $\boldsymbol{\mathcal{H}}$: the magnetic field intensity (in $A/m$)
+ \item $\boldsymbol{\mathcal{D}}$: the electric flux density (in $A\cdot s/m^2=C/m^2$)
+ \item $\boldsymbol{\mathcal{B}}$: the magnetic flux density (in $V\cdot s/m^2=Wb/m^2$, also known as Tesla $T$)
+ \item $\boldsymbol{\mathcal{J}}$: the electric current density (in $A/m^2$)
  \item $q_v$: the electric charge density (in $C/m^3$)
 \end{itemize}
-where all quantities are function of space and time, e.g. $\mathcal{E}=\mathcal{E}(\mathbf{r},t)$.
+where all quantities are function of space and time, e.g. $\boldsymbol{\mathcal{E}}=\boldsymbol{\mathcal{E}}(\mathbf{r},t)$.
 
 Since James Clerk Maxwell discovered the full set of mathematical laws describing electromagnetic fields, many mathematicians, physicists and engineers have proposed different frameworks for representing fields and waves equations\parencite{Lindell2004, Warnick2014}. For day-to-day work in electromagnetic engineering, Heaviside's vector representation is commonly used. Within this frame,  Maxwell equations can be stated as a set of local differential equations:
 \begin{subequations}
@@ -91,7 +98,326 @@ In order to be able to solve the  equations(\ref{eq:MaxwellEquations}), one need
 	
 	The latter choice can also take origin from the interpretation that the electric and magnetic fields as a force acting on a test charge via the Lorentz force $q(\mathbf{E}+\mathbf{v}\times\mathbf{B})$, leading naturally to $(\mathbf{E}$,$\mathbf{B})$. However, if one uses an energy picture using differential forms, interpreting the electromagnetic field as the change of energy experienced by a test charge as it moves through the field, the couples $(\mathbf{E}$,$\mathbf{H})$ and $(\mathbf{D}$,$\mathbf{B})$ are represented by different mathematical objects\parencite{Warnick2014}. 
 	}
-. These relations depend on the medium properties in which the field exists and are called \emph{constitutive relations}. Explicit forms of these relationships have been found from experimentation or deduced from atomic considerations \parencite[sec.5]{Schwinger1998} and are discussed in the next section.
+. These relations depend on the medium properties in which the field exists and are called \emph{constitutive relations}. Explicit forms of these relationships have been found from experimentation or deduced from atomic considerations \parencite[sec.5]{Schwinger1998} and are discussed in a later section.
+
+
+% ###########################################################################
+% ###########################################################################
+% ###########################################################################
+\subsection{Time Harmonic Electromagnetic Fields}
+% ###########################################################################
+% ###########################################################################
+\subsubsection{Phasors}
+In most of the cases in magnetic fusion plasma heating and current drive, Radio-Frequency source time excitation varies sinusoidally in time with a single frequency (or \emph{AC} for Alternative Current). Such case of time varying electromagnetic fields is referred as \emph{time harmonic} or \emph{monochromatic} fields. In this case, the mathematical analysis is simplified by using complex quantities. A scalar quantity $a$ can be defined as\footnote{The convention $ a \stackrel{\Delta}{=} \sqrt{2} |A| \sin (\omega t + \alpha) = \sqrt{2} \Im\left[A e^{j \omega t} \right]$ could also have been used.}:
+\begin{equation}
+a(\mathbf{r},t)
+\stackrel{\Delta}{=} 
+\sqrt{2} |A(\mathbf{r})| \cos (\omega t + \alpha) = \sqrt{2} \Re\left[A(\mathbf{r}) e^{j \omega t} \right] \label{eq:phasor}
+\end{equation}
+where $a=a(\mathbf{r}, t)$ is called the \emph{instantaneous quantity} and $A=|A|e^{j\alpha}$ is called the \emph{complex quantity} or \emph{phasor}. Note that the complex quantity $A$ does \emph{not} depend of the time but it may be a function of position, i.e. $A=A(\mathbf{r})$. 
+
+This definition, taken from \parencite{Harrington2001}, leads to few remarks. In electrical engineering, it is more practical to use time-averaged power (over any integer number of cycles) than instantaneous power since the voltages and currents are time-varying functions. The $\sqrt{2}$ factor, also known as the \emph{crest factor}, comes for the choice made for the magnitude $|A|$ of the complex quantity $A$ to be the \emph{effective} (or RMS, for Root-Mean-Square) value of the sinusoidally time varying quantity $\mathcal{A}$\footnote{Can also be proved from the average of the product of two instantaneous complex quantities $a$ and $b$ as defined by (\ref{eq:phasor}) which is  
+	$$ 
+	\frac{1}{T}  \int_0^T a(t) b(t)\diff t = \Re[AB^*]
+	$$. Then, one deduces that 
+	$$
+	\frac{1}{T}  \int_0^T \left[a(t)\right]^2 \diff t = \Re[AA^*] = |A|^2
+	$$}: 
+\begin{subequations}
+	\begin{align}
+	a_{\mathrm{rms}}
+	&= \sqrt{\frac{1}{T} \int_0^T \left[a(t) \right]^2 \diff t}  \nonumber \\
+	&= \sqrt{\frac{1}{T} \int_0^T  \left[\sqrt{2} |A| \cos (\omega t + \alpha) \right]^2 \diff t} \nonumber \\
+	&= \sqrt{\frac{|A|^2}{T} \int_0^T  \left[ 1+\cos (2\omega t + 2\alpha) \right] \diff t} \nonumber \\
+	&= |A| \nonumber
+	\end{align}
+\end{subequations}
+Dropping the factor $\sqrt{2}$ in (\ref{eq:phasor}) would lead to express $|A|$ as the peak value of $\mathcal{A}$ instead\footnote{Which is the case for example in ANSYS HFSS (while the Poynting vector is a time-averaged quantity)}. 
+
+When calculating the complex power, one advantage of the previous definition is to get the same proportionally factors as for their instantaneous counterparts, i.e. $p=v i$ for the instantaneous power and $P=VI^*$ for the complex power. Otherwise, a factor $1/2$ would appear in the complex power if peak values would have been used for $|V|$ and $|I|$.
+
+This definition can be extended to vectors quantities having sinusoidal time variation:
+\begin{equation}
+\boldsymbol{\mathcal{E}}(\mathbf{r},t) = \sqrt{2} \Re \left[ \mathbf{E}(\mathbf{r}) e^{j\omega t}\right]
+\label{eq:definitionTimeHarmonicField}
+\end{equation}
+which means that each components of $\mathbf{E}$ are related to the components of $ \boldsymbol{\mathcal{E}}$ by the relation (\ref{eq:phasor}). For example, in a cartesian frame, the components of $\boldsymbol{\mathcal{E}}$ and $\mathbf{E}$ are related by:
+\begin{eqnarray*}
+	\mathcal{E}_x = \sqrt{2} \Re \left[ E_x e^{j\omega t}\right] = \sqrt{2} |E_x| \cos (\omega t + \phi_x) \\
+	\mathcal{E}_y = \sqrt{2} \Re \left[ E_y e^{j\omega t}\right] = \sqrt{2} |E_y| \cos (\omega t + \phi_y) \\
+	\mathcal{E}_z = \sqrt{2} \Re \left[ E_z e^{j\omega t}\right] = \sqrt{2} |E_z| \cos (\omega t + \phi_z) 
+\end{eqnarray*}
+which leads to:
+\begin{subequations}
+	\begin{align}
+	\mathcal{E}_{\mathrm{rms}} 
+	=& \sqrt{\frac{1}{T} \int_0^T  \left[ \boldsymbol{\mathcal{E}}(t) \right]^2 \diff t} \nonumber \\
+	=& \sqrt{\frac{1}{T} \int_0^T  \left[ \boldsymbol{\mathcal{E}}(t) \cdot \boldsymbol{\mathcal{E}}(t) \right] \diff t} \nonumber \\
+	=& \sqrt{\frac{1}{T} \int_0^T  \left[ \mathcal{E}_x^2 + \mathcal{E}_y^2 + \mathcal{E}_z^2  \right] \diff t} \nonumber \\
+	=& \sqrt{|E_x|^2 + |E_y|^2 + |E_z|^2} \nonumber \\
+	=& \sqrt{ \mathbf{E} \cdot \mathbf{E}^* } \nonumber \\
+	=& \left| \mathbf{E} \right| \nonumber
+	\end{align}
+\end{subequations}
+
+Note that the phases $\phi_x, \phi_y, \phi_z$ are not necessarily equal. This leads to an important remark on the evaluation of peak values of time-harmonic vector fields. For sinusoidally time varying \emph{scalar} complex quantity, the \emph{peak} value can be obtained from:
+\begin{equation}
+A_{\mathrm{peak}} = \sqrt{2} |A|
+\end{equation}
+However, this relation does not hold in general for vector fields, unless in the particular case of linearly polarized fields\footnote{Inversely, if we have defined (\ref{eq:phasor}) without the $\sqrt{2}$ factor, the rms value would not be in general derived from $1/\sqrt{2}$ the peak value.}. In the case of circularly polarized field for example, the peak value is constant in time and such is equal to the rms value\parencite{Faria2008}.
+
+
+Finally, note that in electrical engineering, the time convention in (\ref{eq:phasor}) is usually $e^{j\omega t}$ while in physics $e^{-j\omega t}$ is preferred\parencite{Bradley2007, Michelsen2017}. This choice is motivated by the fact that most of the electromagnetic solver packages use the former convention, and so to avoid any confusion. Note however that most of the physics books on plasma waves adopt instead the later convention \parencite{Swanson2003, Stix1992, Brambilla1998}.
+
+
+
+
+% ###########################################################################
+% ###########################################################################
+\subsubsection{Time Harmonic Maxwell Equations}
+For time-harmonic fields, using phasor analysis leads to obtain single frequency steady state response. Using the mathematical properties of the real part operator $\Re$, Maxwell equations can be reformulated in terms of complex phasors (See sec.1-8 of \parencite{Harrington2001} for a complete derivation). Moreover, in this process, time-derivatives are expressed by a $j\omega$ multiplier.  
+
+Thus, the Maxwell equations (\ref{eq:Maxwell-Faraday}, \ref{eq:Maxwell-Ampere}, \ref{eq:Maxwell-Gauss} \ref{eq:Maxwell-Gauss-Magnetism}) become for time harmonic fields:
+\begin{subequations}
+	\begin{align}
+	\boldsymbol{\nabla} \times \mathbf{H} (\mathbf{r}) &= j\omega\mathbf{D}(\mathbf{r}) + \mathbf{J}(\mathbf{r})  \label{eq:Maxwell-Faraday-Harmonic} \\
+	\boldsymbol{\nabla} \times \mathbf{E} (\mathbf{r}) &= -j\omega\mathbf{B}(\mathbf{r}) \label{eq:Maxwell-Ampere-Harmonic} \\
+	\boldsymbol{\nabla} \cdot \mathbf{D} (\mathbf{r}) &= q_v(\mathbf{r}) \label{eq:Maxwell-Gauss-Harmonic} \\
+	\boldsymbol{\nabla} \cdot \mathbf{B} (\mathbf{r}) &= 0 \label{eq:Maxwell-Gauss-Magnetism-Harmonic} 
+	\end{align}
+	\label{eq:MaxwellEquationsTimeHarmonic}
+\end{subequations}
+
+% #######################################
+\subsubsection{Finite bandwidth solutions}
+Let us generalize to field solutions of finite bandwidth, which are a continuous distribution of frequencies $\omega$. Similarly to our definition  (\ref{eq:definitionTimeHarmonicField}), we express the field by a summation of time-harmonic solutions over all frequencies:
+\begin{equation}
+\boldsymbol{\mathcal{E}}(\mathbf{r}, t)
+=
+\int
+\Re \left[
+\boldsymbol{\mathcal{E}}(\mathbf{r}, \omega)
+e^{j\omega t}
+\right] 
+\diff \omega
+\end{equation}
+The real part operator can be put outside the integral:
+\begin{equation}
+\boldsymbol{\mathcal{E}}(\mathbf{r}, t)
+=
+\Re \left[
+\int
+\boldsymbol{\mathcal{E}}(\mathbf{r}, \omega)
+e^{j\omega t}
+\diff \omega
+\right] 
+\end{equation}
+which then can be seen as a time-domain Fourier transforms, defined such as as:
+\begin{subequations}
+	\begin{align}
+		f(t) =& \int_{-\infty}^{+\infty} f(\omega) e^{j\omega t} \diff \omega \\
+	f(\omega) =& \frac{1}{2\pi}\int_{-\infty}^{+\infty} f(t) e^{-j\omega t} \diff t 
+	\end{align}
+	\label{eq:FourierTransformTime}
+\end{subequations}
+If $f(t)$ is a real function, then a property of the Fourier transform for $f(\omega)$ is\footnote{More of Fourier transform in \parencite[sec.1.3]{Clemmow1996} and \parencite[chap.4]{Harrington2001}.}:
+\begin{equation}
+f(-\omega) = f^*(\omega)
+\label{eq:FourierPropertyRealFunction}
+\end{equation}
+
+
+If we require the property  (\ref{eq:FourierPropertyRealFunction}) to $\boldsymbol{\mathcal{E}}(\omega)$, i.e. $
+\boldsymbol{\mathcal{E}}(\mathbf{r}, -\omega)
+\overset{\Delta}{=}
+\boldsymbol{\mathcal{E}}^*(\mathbf{r}, -\omega)
+$
+then we can eliminate the real part operator $\Re$:
+\begin{equation}
+\boldsymbol{\mathcal{E}}(\mathbf{r}, t)
+=
+\int
+\boldsymbol{\mathcal{E}}(\mathbf{r}, \omega)
+e^{j\omega t}
+\diff \omega
+\end{equation}
+so $\boldsymbol{\mathcal{E}}(\mathbf{r}, t)$ forms a Fourier transform pair with $\boldsymbol{\mathcal{E}}(\mathbf{r}, \omega)$,  defined by:
+\begin{equation}
+	\boldsymbol{\mathcal{E}}(\mathbf{r}, \omega) = \frac{1}{2\pi}\int_{-\infty}^{+\infty} 
+	\boldsymbol{\mathcal{E}}(\mathbf{r}, t)
+	 e^{-j\omega t} \diff t 
+	 \label{eq:TimeFourierTransformE}
+\end{equation}
+
+After introducing the Fourier transform to Maxwell equations (\ref{eq:MaxwellEquations}), one obtains the time-spectral representation of Maxwell equations:
+\begin{subequations}
+	\begin{align}
+	\boldsymbol{\nabla} \times \boldsymbol{\mathcal{H}} (\mathbf{r}, \omega) &= j\omega\boldsymbol{\mathcal{D}} (\mathbf{r}, \omega) + \boldsymbol{\mathcal{J}} (\mathbf{r}, \omega)   \\
+	\boldsymbol{\nabla} \times \boldsymbol{\mathcal{E}} (\mathbf{r}, \omega) &= -j\omega\boldsymbol{\mathcal{B}} (\mathbf{r}, \omega)  \\
+	\boldsymbol{\nabla} \cdot \boldsymbol{\mathcal{D}} (\mathbf{r}, \omega) &= q_v(\mathbf{r}, \omega)  \\
+	\boldsymbol{\nabla} \cdot \boldsymbol{\mathcal{B}} (\mathbf{r}, \omega) &= 0  
+	\end{align}
+	\label{eq:MaxwellEquationTimeSpectral}
+\end{subequations}
+which have the same form than (\ref{eq:MaxwellEquationsTimeHarmonic}), but with different quantities since they do not have different units\parencite[sec.1.7.5]{Smith1997}. For example, the electric field (phasor) in (\ref{eq:Maxwell-Ampere-Harmonic}) was in $V/m$, while here it is in $V/m/Hz$ that is intensity per unit frequency. 
+
+We can recover (\ref{eq:MaxwellEquationsTimeHarmonic}) in the case of time-harmonic field, i.e if $\boldsymbol{\mathcal{E}}(\mathbf{r}, t) = \mathbf{E}(\mathbf{r})\cos\omega_0 t=\Re[\mathbf{E}(\mathbf{r})e^{j\omega_0 t}]$, where (\ref{eq:TimeFourierTransformE}) becomes\footnote{We have dropped the $\sqrt{2}$ for convenience but without loss of generality.}:
+\begin{eqnarray}
+\boldsymbol{\mathcal{E}}(\mathbf{r},\omega) 
+	&=&  
+	\frac{1}{2\pi}\int_{-\infty}^{+\infty} \diff t \;
+	\Re[\mathbf{E}(\mathbf{r})e^{j\omega_0 t}]
+	e^{-j\omega t} 
+	\nonumber
+	\\
+	&=&  
+	\frac{1}{4\pi}\int_{-\infty}^{+\infty} \diff t \;
+	\mathbf{E}(\mathbf{r}) e^{-j(\omega-\omega_0 ) t}
+	+
+	\mathbf{E}^*(\mathbf{r}) e^{-(\omega+\omega_0 ) t} 
+	\nonumber
+	\\
+	&=&
+	\frac{1}{4\pi} \left[
+	\mathbf{E}(\mathbf{r}) \delta(\omega - \omega_0) 
+	+
+	\mathbf{E}^*(\mathbf{r}) \delta(\omega + \omega_0)  
+	\right]
+	\nonumber
+\end{eqnarray}
+where we have the Dirac distribution definition:
+\begin{eqnarray}
+\delta(x - x_0) 
+= \frac{1}{2\pi}
+\int
+e^{j (x-x_0) u} \diff u
+\label{eq:DiracDefinition}
+\end{eqnarray}
+Moreover, using the property (\ref{eq:FourierPropertyRealFunction}) and the fact that the Dirac distribution is even, we have finally:
+\begin{eqnarray}
+\boldsymbol{\mathcal{E}}(\mathbf{r},\omega) 
+&=&
+\frac{1}{4\pi}\int_{-\infty}^{+\infty} \diff t \;
+\mathbf{E}(\mathbf{r}) e^{-j(\omega-\omega_0 ) t}
++
+\frac{1}{4\pi}\int_{-\infty}^{+\infty} \diff t
+\mathbf{E}(-\mathbf{r}) e^{-j(\omega+\omega_0 ) t} 
+\nonumber
+\\
+&=&
+\frac{1}{4\pi}\int_{-\infty}^{+\infty} \diff t \;
+\mathbf{E}(\mathbf{r}) e^{-j(\omega-\omega_0 ) t}
++
+\frac{1}{4\pi}\int_{-\infty}^{+\infty} \diff t
+\mathbf{E}(\mathbf{r}) e^{+j(\omega+\omega_0 ) t} 
+\nonumber
+\\
+&=&
+\frac{1}{2\pi}
+\mathbf{E}(\mathbf{r}) \delta(\omega - \omega_0) 
+\end{eqnarray}
+Doing the same for other fields and plugging into (\ref{eq:MaxwellEquationTimeSpectral}) leads to recover (\ref{eq:MaxwellEquationsTimeHarmonic}) if sources and materials do not depend of the frequency (no time dispersion). 
+
+
+% #######################################
+\subsection{$k-\omega$ Fields Representation}\label{sec:spectralRepresentation}
+Let us generalise to the case where the field solution is represented by the summation of many plane (or evanescent) waves characterized by their wavevector $\mathbf{k}=(k_x, k_y, k_z)$. We construct a solution on the form: 	
+\begin{subequations}
+	\begin{align}
+	\boldsymbol{\mathcal{A}}(\mathbf{r}, t) =& \Re \left[
+	\int \diff \omega \int \diff \mathbf{k} \;
+	\mathbf{\boldsymbol{\mathcal{A}}}(\mathbf{k}, \omega) e^{j(\omega t - \mathbf{k}\cdot\mathbf{r})}
+	\right]
+	\end{align}
+	\label{eq:k-spectralDefinition}
+\end{subequations}
+Since $\boldsymbol{\mathcal{A}}(\mathbf{r}, t)$ is a real function, one can drop the real part operator (cf previously. Still valid with causality?) which leads to the appearance of a four dimensional Fourier transform which pair is defined by:
+ \begin{subequations}
+ 	\begin{align}
+ 	\boldsymbol{\mathcal{A}}(\mathbf{k}, \omega) =& 
+ 	\frac{1}{(2\pi)^4}
+ 	\int \diff t \int \diff \mathbf{r} \;
+ 	\mathbf{\boldsymbol{\mathcal{A}}}(\mathbf{r}, t) e^{-j(\omega t - \mathbf{k}\cdot\mathbf{r})}
+ 	\end{align}
+ \end{subequations}
+
+Using (\ref{eq:k-spectralDefinition}), the divergence and curl operators get simpler expressions in the $k-\omega$ domain\footnote{Note that the derivation requires an additional condition on the solution, which is to be 0 at infinity. Indeed, an integration per part is used during the evaluation of the nabla operator.} :
+\begin{eqnarray}
+\boldsymbol{\nabla} \cdot\boldsymbol{\mathcal{A}}(\mathbf{r}, t) 
+&\leftrightarrow&
+ -j\mathbf{k}\cdot \boldsymbol{\mathcal{A}} (\mathbf{k}, \omega)
+\\
+\boldsymbol{\nabla} \times \boldsymbol{\mathcal{A}} (\mathbf{r}, t) 
+&\leftrightarrow& 
+-j\mathbf{k}\times \boldsymbol{\mathcal{A}} (\mathbf{k}, \omega)
+\\
+\frac{\partial}{\partial t} \boldsymbol{\mathcal{A}} (\mathbf{r}, t) 
+&\leftrightarrow& 
+j \omega \boldsymbol{\mathcal{A}} (\mathbf{k}, \omega)
+\end{eqnarray}
+Plugging such a solution into the Maxwell equations (\ref{eq:MaxwellEquations}) leads to algebraic equations:
+\begin{subequations}
+	\begin{align}
+	\mathbf{k} \times \boldsymbol{\mathcal{E}} (\mathbf{k}, \omega) 
+		=& 
+		\omega \boldsymbol{\mathcal{B}} (\mathbf{k}, \omega)
+	\\
+	\mathbf{k} \times \boldsymbol{\mathcal{H}} (\mathbf{k}, \omega) 
+	=& 
+	-\omega \boldsymbol{\mathcal{D}} (\mathbf{k}, \omega)
+	+ 	
+	j\boldsymbol{\mathcal{J}} (\mathbf{k}, \omega) 
+	\\
+	\mathbf{k}  \cdot \boldsymbol{\mathcal{D}} (\mathbf{k}, \omega) 
+		=& jq_v(\mathbf{k}, \omega) 
+	\\
+	\mathbf{k}  \cdot \boldsymbol{\mathcal{B}} (\mathbf{k}, \omega) 
+		=& 0
+	\end{align}
+	\label{eq:k-omegaMaxwellEquations}
+\end{subequations}
+Not only the equations are simpler to solve, but we will see in the section devoted to the constitutive relations that in some case, medium properties are also simpler in this domain.  
+
+
+In the case of single plane-wave solution, such as:
+\begin{equation}
+\boldsymbol{\mathcal{E}}(\mathbf{r},t)
+=
+\Re\left[
+\mathbf{E}_0
+ e^{j(\omega_0 t - \mathbf{k}_0\cdot\mathbf{r})}
+\right]
+\end{equation}
+then we obtain:
+\begin{equation}
+	\boldsymbol{\mathcal{E}}(\mathbf{k},\omega)
+	=
+	 	\frac{1}{(2\pi)^4}
+	 	\mathbf{E}_0
+	 	\delta(\omega - \omega_0) \delta(\mathbf{k} - \mathbf{k}_0) 
+\end{equation}
+and the Maxwell equations (\ref{eq:MaxwellEquations}) become:
+\begin{subequations}
+	\begin{align}
+	\mathbf{k} \times\mathbf{E}_0
+	=& 
+	\omega \mathbf{B}_0 
+	\\
+%	\mathbf{k} \times \mathbf{H} 
+%	=& 
+%	-\omega \mathbf{D} 
+%	+ 	
+%	j\mathbf{J} 
+%	\\
+%	\mathbf{k}  \cdot \mathbf{D}  
+%	=& jq_v(\mathbf{k}, \omega) 
+%	\\
+	\mathbf{k} \cdot \mathbf{B}  
+	=& 0
+	\end{align}
+	\label{eq:k-omegaMaxwellEquationsPhasor}
+\end{subequations}
+where $\mathbf{B}_0 = (\mathbf{k}\times\mathbf{E}_0)/\omega$. Without any other information on the constitutive relations, we stop here in the derivation.
 
 % ###########################################################################
 % ###########################################################################
@@ -180,7 +506,7 @@ Thus, the constitutive relations of a general non-local anisotropic linear mediu
 	= &
 	\int_{t'=-\infty}^t \diff t'
 	\int \diff \mathbf{r}' \;
-	\boldsymbol{\varepsilon}(\mathbf{r},\mathbf{r}', t,t') \cdot \boldsymbol{\mathcal{E}})(\mathbf{r}', t') 
+	\boldsymbol{\varepsilon}(\mathbf{r},\mathbf{r}', t,t') \cdot \boldsymbol{\mathcal{E}}(\mathbf{r}', t') 
 	\\
 	\boldsymbol{\mathcal{B}}(\mathbf{r}, t)
 	=& 
@@ -197,7 +523,7 @@ Thus, the constitutive relations of a general non-local anisotropic linear mediu
 \end{subequations}
 The restriction of time integration to times $t'<t$ is the expression of the causality, which impose that the quantities at $t$ can only be influenced by the quantities are previous instants.
 
-If invariance with respect to the choice of origin in space and time can be asserted, then the previous relation can be expressed in terms of convolutions in the form of\parencite[p.19]{Brambilla1998}:
+If invariance with respect to the choice of origin in space (i.e. homogeneous) and time (i.e. stationary) can be asserted, then the previous relation can be expressed in terms of convolutions in the form of\parencite[p.19]{Brambilla1998}:
 \begin{subequations}
 	\begin{align}
 	\boldsymbol{\mathcal{D}}(\mathbf{r}, t) 
@@ -219,20 +545,26 @@ If invariance with respect to the choice of origin in space and time can be asse
 	\boldsymbol{\sigma}(\mathbf{r}-\mathbf{r}', t-t') \cdot \boldsymbol{\mathcal{E}}(\mathbf{r}', t')  
 	\end{align}
 \end{subequations}
-In this case, fields and current can be Fourier transform in space and time, i.e. represented as a continuous spectrum of time-harmonic plane-waves\parencite{Clemmow1996, Jackson1998}:
+
+
+If one considers that the fields and current can be represented by a continuous spectrum of time-harmonic plane-waves such as done in section \ref{sec:spectralRepresentation}, which has the appearance of a four-dimensional Fourier transform \parencite{Clemmow1996}, i.e.:
 \begin{subequations}
 	\begin{align}
-	\boldsymbol{\mathcal{E}}(\mathbf{r}, t) =& \int \diff \omega \int \diff \mathbf{k} \;
+	\boldsymbol{\mathcal{E}}(\mathbf{r}, t) =& \Re \left[
+	 \int \diff \omega \int \diff \mathbf{k} \;
 	\boldsymbol{\mathcal{E}}(\mathbf{k}, \omega) e^{j(\omega t - \mathbf{k}\cdot\mathbf{r})}
+	\right]
 	\\
-	\boldsymbol{\mathcal{H}}(\mathbf{r}, t) =& \int \diff \omega \int \diff \mathbf{k} \;
+	\boldsymbol{\mathcal{H}}(\mathbf{r}, t) =& \Re \left[
+	 \int \diff \omega \int \diff \mathbf{k} \;
 	\boldsymbol{\mathcal{H}}(\mathbf{k}, \omega) e^{j(\omega t - \mathbf{k}\cdot\mathbf{r})}
+	\right]
 	\\
-	\boldsymbol{\mathcal{J}}(\mathbf{r}, t) =& \int \diff \omega \int \diff \mathbf{k} \;
-	\boldsymbol{\mathcal{J}}(\mathbf{k}, \omega) e^{j(\omega t - \mathbf{k}\cdot\mathbf{r})}
+	\boldsymbol{\mathcal{J}}(\mathbf{r}, t) =& \Re \left[ \int \diff \omega \int \diff \mathbf{k} \;
+	\boldsymbol{\mathcal{J}}(\mathbf{k}, \omega) e^{j(\omega t - \mathbf{k}\cdot\mathbf{r})} \right]
 	\end{align}
 \end{subequations}
-which leads in the $k-\omega$ domain, to simpler algebraic time-invariant relationships thanks to the convolution theorem:
+In such as case, replacing the fields with the latter definition leads in the $k-\omega$ domain, to simpler algebraic time-invariant relationships thanks to the convolution theorem:
 \begin{subequations}
 	\begin{align}
 	\boldsymbol{\mathcal{D}}(\mathbf{k}, \omega) 
@@ -247,6 +579,7 @@ which leads in the $k-\omega$ domain, to simpler algebraic time-invariant relati
 	=& 
 	\boldsymbol{\sigma}(\mathbf{k}, \omega) \cdot \boldsymbol{\mathcal{E}}(\mathbf{k}, \omega) 
 	\end{align}
+	\label{eq:k-omegaDispersionRelation}
 \end{subequations}
 where the tensors have been defined by:
 \begin{subequations}
@@ -261,139 +594,6 @@ where the tensors have been defined by:
 
 
 
-% ###########################################################################
-% ###########################################################################
-% ###########################################################################
-\subsection{Time Harmonic Electromagnetic Fields}
-% ###########################################################################
-% ###########################################################################
-\subsubsection{Phasors}
-In most of the cases in magnetic fusion plasma heating and current drive, Radio-Frequency source time excitation varies sinusoidally in time with a single frequency (or \emph{AC} for Alternative Current). Such case of time varying electromagnetic fields is referred as \emph{time harmonic fields}. In this case, the mathematical analysis is simplified by using complex quantities. A scalar quantity $a$ can be defined as\footnote{The convention $ a \stackrel{\Delta}{=} \sqrt{2} |A| \sin (\omega t + \alpha) = \sqrt{2} \Im\left[A e^{j \omega t} \right]$ could also have been used.}:
-\begin{equation}
- a(\mathbf{r},t)
-  \stackrel{\Delta}{=} 
-  \sqrt{2} |A(\mathbf{r})| \cos (\omega t + \alpha) = \sqrt{2} \Re\left[A(\mathbf{r}) e^{j \omega t} \right] \label{eq:phasor}
-\end{equation}
-where $a=a(\mathbf{r}, t)$ is called the \emph{instantaneous quantity} and $A=|A|e^{j\alpha}$ is called the \emph{complex quantity} or \emph{phasor}. Note that the complex quantity $A$ does \emph{not} depend of the time but it may be a function of position, i.e. $A=A(\mathbf{r})$. 
-
-This definition, taken from \parencite{Harrington2001}, leads to few remarks. In electrical engineering, it is more practical to use time-averaged power (over any integer number of cycles) than instantaneous power since the voltages and currents are time-varying functions. The $\sqrt{2}$ factor, also known as the \emph{crest factor}, comes for the choice made for the magnitude $|A|$ of the complex quantity $A$ to be the \emph{effective} (or RMS, for Root-Mean-Square) value of the sinusoidally time varying quantity $\mathcal{A}$\footnote{Can also be proved from the average of the product of two instantaneous complex quantities $a$ and $b$ as defined by (\ref{eq:phasor}) which is  
-$$ 
-\frac{1}{T}  \int_0^T a(t) b(t)\diff t = \Re[AB^*]
-$$. Then, one deduces that 
-$$
-\frac{1}{T}  \int_0^T \left[a(t)\right]^2 \diff t = \Re[AA^*] = |A|^2
-$$}: 
-\begin{subequations}
- \begin{align}
-  \mathcal{A}_{\mathrm{rms}}
-    &= \sqrt{\frac{1}{T} \int_0^T \left[\mathcal{A}(t) \right]^2 \diff t}  \nonumber \\
-    &= \sqrt{\frac{1}{T} \int_0^T  \left[\sqrt{2} |A| \cos (\omega t + \alpha) \right]^2 \diff t} \nonumber \\
-    &= \sqrt{\frac{|A|^2}{T} \int_0^T  \left[ 1+\cos (2\omega t + 2\alpha) \right] \diff t} \nonumber \\
-    &= |A| \nonumber
- \end{align}
-\end{subequations}
-Dropping the factor $\sqrt{2}$ in (\ref{eq:phasor}) would lead to express $|A|$ as the peak value of $\mathcal{A}$ instead\footnote{Which is the case for example in ANSYS HFSS (while the Poynting vector is a time-averaged quantity)}. 
-
-When calculating the complex power, one advantage of the previous definition is to get the same proportionally factors as for their instantaneous counterparts, i.e. $p=v i$ for the instantaneous power and $P=VI^*$ for the complex power. Otherwise, a factor $1/2$ would appear in the complex power if peak values would have been used for $|V|$ and $|I|$.
-
-This definition can be extended to vectors quantities having sinusoidal time variation:
-\begin{equation}
- \boldsymbol{\mathcal{E}}(\mathbf{r},t) = \sqrt{2} \Re \left[ \mathbf{E}(\mathbf{r}) e^{j\omega t}\right]
-\end{equation}
-which means that each components of $\mathbf{E}$ are related to the components of $ \boldsymbol{\mathcal{E}}$ by the relation (\ref{eq:phasor}). For example, in a cartesian frame, the components of $\boldsymbol{\mathcal{E}}$ and $\mathbf{E}$ are related by:
-\begin{eqnarray*}
- \mathcal{E}_x = \sqrt{2} \Re \left[ E_x e^{j\omega t}\right] = \sqrt{2} |E_x| \cos (\omega t + \phi_x) \\
- \mathcal{E}_y = \sqrt{2} \Re \left[ E_y e^{j\omega t}\right] = \sqrt{2} |E_y| \cos (\omega t + \phi_y) \\
- \mathcal{E}_z = \sqrt{2} \Re \left[ E_z e^{j\omega t}\right] = \sqrt{2} |E_z| \cos (\omega t + \phi_z) 
-\end{eqnarray*}
-which leads to:
-\begin{subequations}
- \begin{align}
-  \mathcal{E}_{\mathrm{rms}} 
-    =& \sqrt{\frac{1}{T} \int_0^T  \left[ \boldsymbol{\mathcal{E}}(t) \right]^2 \diff t} \nonumber \\
-    =& \sqrt{\frac{1}{T} \int_0^T  \left[ \boldsymbol{\mathcal{E}}(t) \cdot \boldsymbol{\mathcal{E}}(t) \right] \diff t} \nonumber \\
-    =& \sqrt{\frac{1}{T} \int_0^T  \left[ \mathcal{E}_x^2 + \mathcal{E}_y^2 + \mathcal{E}_z^2  \right] \diff t} \nonumber \\
-    =& \sqrt{|E_x|^2 + |E_y|^2 + |E_z|^2} \nonumber \\
-    =& \sqrt{ \mathbf{E} \cdot \mathbf{E}^* } \nonumber \\
-    =& \left| \mathbf{E} \right| \nonumber
- \end{align}
-\end{subequations}
-
-Note that the phases $\phi_x, \phi_y, \phi_z$ are not necessarily equal. This leads to an important remark on the evaluation of peak values of time-harmonic vector fields. For sinusoidally time varying \emph{scalar} complex quantity, the \emph{peak} value can be obtained from:
-\begin{equation}
- A_{\mathrm{peak}} = \sqrt{2} |A|
-\end{equation}
-However, this relation does not hold in general for vector fields, unless in the particular case of linearly polarized fields\footnote{Inversely, if we have defined (\ref{eq:phasor}) without the $\sqrt{2}$ factor, the rms value would not be in general derived from $1/\sqrt{2}$ the peak value.}. In the case of circularly polarized field for example, the peak value is constant in time and such is equal to the rms value\parencite{Faria2008}.
-
-
-Finally, note that in electrical engineering, the time convention in (\ref{eq:phasor}) is usually $e^{j\omega t}$ while in physics $e^{-j\omega t}$ is preferred\parencite{Bradley2007, Michelsen2017}. This choice is motivated by the fact that most of the electromagnetic solver packages use the former convention, and so to avoid any confusion. Note however that most of the physics books on plasma waves adopt instead the later convention \parencite{Swanson2003, Stix1992, Brambilla1998}.
-
-
-
-
-% ###########################################################################
-% ###########################################################################
-\subsubsection{Time Harmonic Maxwell Equations}
-For time-harmonic fields, using phasor analysis leads to obtain single frequency steady state response. Using the mathematical properties of the real part operator $\Re$, Maxwell equations can be reformulated in terms of complex phasors. See sec.1-8 of \parencite{Harrington2001} for a complete derivation. Moreover, in this process, time-derivatives are expressed by a $j\omega$ multiplier.  
-
-Thus, the Maxwell equations (\ref{eq:Maxwell-Faraday}, \ref{eq:Maxwell-Ampere}, \ref{eq:Maxwell-Gauss} \ref{eq:Maxwell-Gauss-Magnetism}) become for time harmonic fields:
-\begin{subequations}
- \begin{align}
-  \boldsymbol{\nabla} \times \mathbf{H} &= j\omega\mathbf{D} + \mathbf{J}  \label{eq:Maxwell-Faraday-Harmonic} \\
-  \boldsymbol{\nabla} \times \mathbf{E} &= -j\omega\mathbf{B} \label{eq:Maxwell-Ampere-Harmonic} \\
-  \boldsymbol{\nabla} \cdot \mathbf{D} &= Q \label{eq:Maxwell-Gauss-Harmonic} \\
-  \boldsymbol{\nabla} \cdot \mathbf{B} &= 0 \label{eq:Maxwell-Gauss-Magnetism-Harmonic} 
- \end{align}
- \label{eq:MaxwellEquationsTimeHarmonic}
-\end{subequations}
-where quantities depend on space $\mathbf{E}=\mathbf{E(\mathbf{r})}$. 
-
-
-\subsubsection{Fourier Transform}
-More generally, a time-varying field can be seen as the linear superposition of the time-harmonics fields at different frequencies, using time-domain Fourier transforms. We define the Fourier transform pairs in time as:
-\begin{subequations}
-	\begin{align}
-	f(\omega) =& \int_{-\infty}^{+\infty} F(t) e^{-j\omega t} \diff t \\
-	F(t) =& \frac{1}{2\pi}\int_{-\infty}^{+\infty} f(\omega) e^{+j\omega t} \diff \omega
-	\end{align}
-	\label{eq:FourierTransformTime}
-\end{subequations}
-One note that the Fourier transform $F(\omega)$ of a real function $f(t)$ has the following property\footnote{More of Fourier transform in \parencite[sec.1.3]{Clemmow1996} and \parencite[chap.4]{Harrington2001}.}:
-\begin{equation}
-	F(-\omega) = F^*(\omega)
-\end{equation}
-and that the transform of the n-th time derivative of a function corresponds to the product by $(j \omega)^n$ in the frequency domain. After introducing the Fourier transform to Maxwell equations (\ref{eq:MaxwellEquations}), one obtains\parencite[sec.1.7.5]{Smith1997}:
-\begin{subequations}
-	\begin{align}
-	\boldsymbol{\nabla} \times \mathbf{H}(\mathbf{r}, \omega) &= j\omega\mathbf{D}(\mathbf{r}, \omega) + \mathbf{J}(\mathbf{r}, \omega)   \\
-	\boldsymbol{\nabla} \times \mathbf{E}(\mathbf{r}, \omega) &= -j\omega\mathbf{B}(\mathbf{r}, \omega)  \\
-	\boldsymbol{\nabla} \cdot \mathbf{D}(\mathbf{r}, \omega) &= Q(\mathbf{r}, \omega)  \\
-	\boldsymbol{\nabla} \cdot \mathbf{B}(\mathbf{r}, \omega) &= 0  
-	\end{align}
-\end{subequations}
-which have the same for, than (\ref{eq:MaxwellEquationsTimeHarmonic}) but the quantities are not the same, since they have different units. For example, the electric field phasor in (\ref{{eq:Maxwell-Ampere-Harmonic}}) was in $V/m$, while here it is in $V/m/Hz$.
-
-The constitutive relationships become in AC:
-\begin{subequations}
-	\begin{align}
-	\mathbf{D} =& \boldsymbol{\varepsilon}(\omega) \mathbf{E} \\
-	\mathbf{B} =& \boldsymbol{\mu}(\omega) \mathbf{H} \\
-	\mathbf{J} =& \boldsymbol{\sigma}(\omega) \mathbf{E}
-	\end{align}
-\end{subequations}
-where $\boldsymbol{\varepsilon}(\omega)$ is the \emph{complex permittivity}, $\boldsymbol{\mu}(\omega)$ the \emph{complex permeability} and $\boldsymbol{\sigma}(\omega)$ the \emph{complex conductivity} of the media. 
-
-
-Expressing the previous equations in terms of $\mathbf{E}$ and $\mathbf{H}$ only leads to:
-\begin{subequations}
- \begin{align}
-  \boldsymbol{\nabla} \times \mathbf{H} &= \left(j\omega\boldsymbol{\varepsilon}(\omega) + \boldsymbol{\sigma}(\omega) \right) \mathbf{E}  \label{eq:Maxwell-Faraday-Harmonic} \\
-  \boldsymbol{\nabla} \times \mathbf{E} &= -j\omega\boldsymbol{\mu}(\omega) \mathbf{H}  \label{eq:Maxwell-Ampere-Harmonic} \\
-  \boldsymbol{\nabla} \cdot (\boldsymbol{\varepsilon}(\omega) \mathbf{E}) &= Q \label{eq:Maxwell-Gauss-Harmonic} \\
-  \boldsymbol{\nabla} \cdot (\boldsymbol{\mu}(\omega) \mathbf{H} ) &= 0 \label{eq:Maxwell-Gauss-Magnetism-Harmonic} 
- \end{align}
-\end{subequations}
-
 
 % ###########################################################################
 % ###########################################################################
@@ -403,6 +603,25 @@ Expressing the previous equations in terms of $\mathbf{E}$ and $\mathbf{H}$ only
 % ###########################################################################
 % ###########################################################################
 \section{Transmission Line Theory}
+\subsection{Transmission Lines}
+\subsubsection{Coaxial Line}
+\paragraph{Power Handling}
+https://microwaves101.com/encyclopedias/coax-power-handling
+'e' in coax
+peak electric field e^1 ==> 60 ohm
+max power for e^0.5 ==> 30 ohm
+average power handling -> heat 
+\subsubsection{Rectangular Waveguides}
+\paragraph{Power Handling}
+
+\subsection{Circular Waveguides}
+\paragraph{Power Handling}
+
+% ###########################################################################
+% ###########################################################################
+% ###########################################################################
+\section{Microwave Measurements}
+[1] E.A. Wolff, R. Kaul, Microwave engineering and systems applications, 1988. doi:10.1109/MAP.1989.6095665.
 
 % ###########################################################################
 % ###########################################################################

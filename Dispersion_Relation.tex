@@ -1,5 +1,5 @@
 \chapter{Dispersion Relation}
-\section{Vacuum dispersion relation}
+\section{Vacuum Dispersion Relation}
 In a non-dispersive isotropic homogeneous non-lossy dielectric medium, such as vacuum (or air), the wavevector $\mathbf{k}=k\mathbf{\hat{k}}$ direction is given by:
 \begin{equation}
  \mathbf{\hat{k}}\cdot\mathbf{E}=0
@@ -13,7 +13,60 @@ where $\mathbf{\hat{k}}$ the unit vector in the direction of $\mathbf{k}$, $k=|\
 
 The condition for that system of 3 equations and 3 unknowns $(E_{x},E_{y},E_{z})$ to have a non-trivial solution, consists in solving the \emph{dispersion relation} between the wavevector $\mathbf{k}$ and the angular frequency $\omega$, i.e. $\mathbf{k}(\omega)$. In this medium, this relation is simple (TODO demo): $k=\sqrt{\mu\varepsilon}\omega=\frac{c}{n}\omega$\parencite[(7.4)]{Jackson1998}\footnote{While in a lossy medium $k^{2}=\mu\varepsilon\omega^{2}-j\omega\mu\sigma$ \parencite[sec. 8.2]{Bladel2007}.}.
 
-
+\subsection{Cold Plasma Dispersion Relation}
+Starting from Maxwell equations expressed in the $k-\omega$ domain (\ref{eq:k-omegaMaxwellEquations}) and assuming that the dispersion relations are of the form (\ref{eq:k-omegaDispersionRelation}), with the supplementary assumption that the medium is non magnetic (i.e. $\boldsymbol{\mu}=\mu_0$), one has thus:
+\begin{subequations}
+	\begin{align}
+	\mathbf{k} \times \boldsymbol{\mathcal{E}} (\mathbf{k}, \omega) 
+	=& 
+	\omega \mu_0 \boldsymbol{\mathcal{H}}(\mathbf{k}, \omega) 
+	\\
+	\mathbf{k} \times \boldsymbol{\mathcal{H}} (\mathbf{k}, \omega) 
+	=& 
+	\left(
+	-\omega \boldsymbol{\varepsilon} (\mathbf{k}, \omega) 
+	+ 	
+	j\boldsymbol{\sigma} (\mathbf{k}, \omega) 
+	\right) \cdot 
+	\boldsymbol{\mathcal{E}}(\mathbf{k}, \omega)
+	\\
+	\mathbf{k}  \cdot \boldsymbol{\varepsilon}(\mathbf{k}, \omega)  \cdot \boldsymbol{\mathcal{E}} (\mathbf{k}, \omega) 
+	=& jq_v(\mathbf{k}, \omega) 
+	\\
+	\mathbf{k}  \cdot \boldsymbol{\mathcal{H}} (\mathbf{k}, \omega) 
+	=& 0	
+	\end{align}
+\end{subequations}
+combining the first two equations leads to the propagation equation:
+\begin{equation}
+\mathbf{k} \times \mathbf{k} \times \boldsymbol{\mathcal{E}} (\mathbf{k}, \omega) 
+-
+	\left(
+	-\omega^2 \mu_0 \boldsymbol{\varepsilon} (\mathbf{k}, \omega) 
+	+ 	
+	j\omega\mu_0\boldsymbol{\sigma} (\mathbf{k}, \omega) 
+	\right) \cdot 
+	\boldsymbol{\mathcal{E}}(\mathbf{k}, \omega)
+	=
+	\boldsymbol{0}
+\end{equation}
+Let's define the equivalent relative dielectric tensor $\mathbf{K}$ such as:
+\begin{equation}
+\mathbf{K}(\mathbf{k},\omega)
+=
+\frac{j}{\omega\varepsilon_0}\boldsymbol{\sigma} (\mathbf{k}, \omega)
+-\mathbf{I}
+\end{equation}
+then,
+\begin{equation}
+\mathbf{k} \times \mathbf{k} \times \boldsymbol{\mathcal{E}} (\mathbf{k}, \omega) 
+- k_0^2
+\mathbf{K}(\mathbf{k}, \omega) \cdot 
+\boldsymbol{\mathcal{E}}(\mathbf{k}, \omega)
+=
+\boldsymbol{0}
+\end{equation}
+where $k_0=\frac{\omega}{c}$
 % Dans un plasma froid magnétisé, la situation est radicalement différente,
 % car les courants de polarisation générés par les mouvements électroniques
 % et ioniques modifient la polarisation des ondes planes ainsi que leur
