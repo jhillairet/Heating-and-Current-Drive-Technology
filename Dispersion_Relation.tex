@@ -40,10 +40,10 @@ Starting from Maxwell equations expressed in the $k-\omega$ domain (\ref{eq:k-om
 combining the first two equations leads to the propagation equation:
 \begin{equation}
 \mathbf{k} \times \mathbf{k} \times \boldsymbol{\mathcal{E}} (\mathbf{k}, \omega) 
-+
+-
 	\left(
-	\omega^2 \mu_0 \boldsymbol{\varepsilon} (\mathbf{k}, \omega) 
-	- 	
+	-\omega^2 \mu_0 \boldsymbol{\varepsilon} (\mathbf{k}, \omega) 
+	+ 	
 	j\omega\mu_0\boldsymbol{\sigma} (\mathbf{k}, \omega) 
 	\right) \cdot 
 	\boldsymbol{\mathcal{E}}(\mathbf{k}, \omega)
@@ -54,20 +54,19 @@ Let's define the equivalent relative dielectric tensor $\mathbf{K}$ such as:
 \begin{equation}
 \mathbf{K}(\mathbf{k},\omega)
 =
-\mathbf{I}
-- 	
 \frac{j}{\omega\varepsilon_0}\boldsymbol{\sigma} (\mathbf{k}, \omega)
+-\mathbf{I}
 \end{equation}
 then,
 \begin{equation}
 \mathbf{k} \times \mathbf{k} \times \boldsymbol{\mathcal{E}} (\mathbf{k}, \omega) 
-+ \frac{\omega^2}{c^2}
+- k_0^2
 \mathbf{K}(\mathbf{k}, \omega) \cdot 
 \boldsymbol{\mathcal{E}}(\mathbf{k}, \omega)
 =
 \boldsymbol{0}
 \end{equation}
-
+where $k_0=\frac{\omega}{c}$
 % Dans un plasma froid magnétisé, la situation est radicalement différente,
 % car les courants de polarisation générés par les mouvements électroniques
 % et ioniques modifient la polarisation des ondes planes ainsi que leur
