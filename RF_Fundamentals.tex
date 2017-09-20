@@ -109,36 +109,43 @@ In order to be able to solve the  equations(\ref{eq:MaxwellEquations}), one need
 % ###########################################################################
 \subsubsection{Phasors}
 In most of the cases in magnetic fusion plasma heating and current drive, Radio-Frequency source time excitation varies sinusoidally in time with a single frequency (or \emph{AC} for Alternative Current). Such case of time varying electromagnetic fields is referred as \emph{time harmonic} or \emph{monochromatic} fields. In this case, the mathematical analysis is simplified by using complex quantities. A scalar quantity $a$ can be defined as\footnote{The convention $ a \stackrel{\Delta}{=} \sqrt{2} |A| \sin (\omega t + \alpha) = \sqrt{2} \Im\left[A e^{j \omega t} \right]$ could also have been used.}:
-\begin{equation}
+\begin{eqnarray}
 a(\mathbf{r},t)
-\stackrel{\Delta}{=} 
-\sqrt{2} |A(\mathbf{r})| \cos (\omega t + \alpha) = \sqrt{2} \Re\left[A(\mathbf{r}) e^{j \omega t} \right] \label{eq:phasor}
+&\stackrel{\Delta}{=}& 
+\sqrt{2} |A(\mathbf{r})| \cos (\omega t + \alpha) = \sqrt{2} \Re\left[A(\mathbf{r}) e^{j \omega t} \right] 
+\label{eq:phasor}
+\end{eqnarray}
+where $a=a(\mathbf{r}, t)$ is called the \emph{instantaneous quantity} and $A=|A|e^{j\alpha}$ is called the \emph{complex quantity} or \emph{phasor}. Note that the complex quantity $A$ does \emph{not} depend of the time but it may be a function of position, i.e. $A=A(\mathbf{r})$. We also have the inverse mapping:
+\begin{equation}
+A(\r) = \frac{1}{\sqrt{2}}\left( a(\r,0) - j a(\r, \pi/2\omega) \right)
 \end{equation}
-where $a=a(\mathbf{r}, t)$ is called the \emph{instantaneous quantity} and $A=|A|e^{j\alpha}$ is called the \emph{complex quantity} or \emph{phasor}. Note that the complex quantity $A$ does \emph{not} depend of the time but it may be a function of position, i.e. $A=A(\mathbf{r})$. 
 
-This definition, taken from \parencite{Harrington2001}, leads to few remarks. In electrical engineering, it is more practical to use time-averaged power (over any integer number of cycles) than instantaneous power since the voltages and currents are time-varying functions. The $\sqrt{2}$ factor, also known as the \emph{crest factor}, comes for the choice made for the magnitude $|A|$ of the complex quantity $A$ to be the \emph{effective} (or RMS, for Root-Mean-Square) value of the sinusoidally time varying quantity $\mathcal{A}$\footnote{Can also be proved from the average of the product of two instantaneous complex quantities $a$ and $b$ as defined by (\ref{eq:phasor}) which is  
+This definition, taken from \parencite{Harrington2001}, leads to few remarks. In electrical engineering, it is more practical to use time-averaged power (over any integer number of cycles) than instantaneous power since the voltages and currents are time-varying functions. The $\sqrt{2}$ factor, also known as the \emph{crest factor}, comes for the choice made for the magnitude $|A|$ of the complex quantity $A$ to be the \emph{effective} (or RMS, for Root-Mean-Square) value of the sinusoidally time varying quantity $a$\footnote{Can also be proved from the average of the product of two instantaneous complex quantities $a$ and $b$ as defined by (\ref{eq:phasor}) which is  
 	$$ 
-	\frac{1}{T}  \int_0^T a(t) b(t)\diff t = \Re[AB^*]
-	$$. Then, one deduces that 
+	\frac{1}{T}  \int_0^T a(t) b(t)\diff t = \Re[AB^*] = \frac{1}{2}\left(AB^* + A^* B \right)
+	$$
+	Then, one deduces that 
 	$$
 	\frac{1}{T}  \int_0^T \left[a(t)\right]^2 \diff t = \Re[AA^*] = |A|^2
 	$$}: 
 \begin{subequations}
 	\begin{align}
-	a_{\mathrm{rms}}
+	a_{\mathrm{rms}} 
 	&= \sqrt{\frac{1}{T} \int_0^T \left[a(t) \right]^2 \diff t}  \nonumber \\
 	&= \sqrt{\frac{1}{T} \int_0^T  \left[\sqrt{2} |A| \cos (\omega t + \alpha) \right]^2 \diff t} \nonumber \\
 	&= \sqrt{\frac{|A|^2}{T} \int_0^T  \left[ 1+\cos (2\omega t + 2\alpha) \right] \diff t} \nonumber \\
 	&= |A| \nonumber
 	\end{align}
 \end{subequations}
-Dropping the factor $\sqrt{2}$ in (\ref{eq:phasor}) would lead to express $|A|$ as the peak value of $\mathcal{A}$ instead\footnote{Which is the case for example in ANSYS HFSS (while the Poynting vector is a time-averaged quantity)}. 
+Dropping the factor $\sqrt{2}$ in (\ref{eq:phasor}) would lead to express $|A|$ as the peak value of $a$ instead\footnote{Which is the case for example in ANSYS HFSS (while the Poynting vector is a time-averaged quantity)}. 
 
 When calculating the complex power, one advantage of the previous definition is to get the same proportionally factors as for their instantaneous counterparts, i.e. $p=v i$ for the instantaneous power and $P=VI^*$ for the complex power. Otherwise, a factor $1/2$ would appear in the complex power if peak values would have been used for $|V|$ and $|I|$.
 
 This definition can be extended to vectors quantities having sinusoidal time variation:
 \begin{equation}
-\boldsymbol{\mathcal{E}}(\mathbf{r},t) = \sqrt{2} \Re \left[ \mathbf{E}(\mathbf{r}) e^{j\omega t}\right]
+\boldsymbol{\mathcal{E}}(\mathbf{r},t) 
+= 
+\sqrt{2} \Re \left[ \mathbf{E}(\mathbf{r}) e^{j\omega t}\right]
 \label{eq:definitionTimeHarmonicField}
 \end{equation}
 which means that each components of $\mathbf{E}$ are related to the components of $ \boldsymbol{\mathcal{E}}$ by the relation (\ref{eq:phasor}). For example, in a cartesian frame, the components of $\boldsymbol{\mathcal{E}}$ and $\mathbf{E}$ are related by:
@@ -240,6 +247,7 @@ then we can eliminate the real part operator $\Re$:
 \boldsymbol{\mathcal{E}}(\mathbf{r}, \omega)
 e^{j\omega t}
 \diff \omega
+\label{eq:FourierTimeHarmonicDef}
 \end{equation}
 so $\boldsymbol{\mathcal{E}}(\mathbf{r}, t)$ forms a Fourier transform pair with $\boldsymbol{\mathcal{E}}(\mathbf{r}, \omega)$,  defined by:
 \begin{equation}
@@ -488,9 +496,12 @@ The medium permittivity $\varepsilon$ can never be less than the vacuum permitti
 If the response of the medium is different depending on the direction of the oscillating field, then the medium is called \emph{anisotropic}. In this case, his response is expressed by tensor relationships.   In anisotropic linear mediums, the constitutive relationships becomes tensor-relationships:
 \begin{subequations}
  \begin{align}
-  \boldsymbol{\mathcal{D}} &= \boldsymbol{\varepsilon} \cdot \boldsymbol{\mathcal{E}} \\
-  \boldsymbol{\mathcal{B}} &= \boldsymbol{\mu} \cdot  \boldsymbol{\mathcal{H}} \\
+  \boldsymbol{\mathcal{D}} &= \boldsymbol{\varepsilon} \cdot \boldsymbol{\mathcal{E}}
+  \label{eq:disp_relation_anisotropic_stationnary_D} \\
+  \boldsymbol{\mathcal{B}} &= \boldsymbol{\mu} \cdot  \boldsymbol{\mathcal{H}} 
+  \label{eq:disp_relation_anisotropic_stationnary_B}\\
   \boldsymbol{\mathcal{J}} &= \boldsymbol{\sigma} \cdot  \boldsymbol{\mathcal{E}}
+  \label{eq:disp_relation_anisotropic_stationnary_J}
  \end{align}
 \end{subequations}
 where $\boldsymbol{\varepsilon}$, $\boldsymbol{\mu}$ and $\boldsymbol{\sigma}$ are the dielectric tensor, the permeability tensor and the conductivity tensor respectively, which can be interpreted as 3x3 matrices\parencite{Swanson2003}.  
@@ -523,7 +534,7 @@ Thus, the constitutive relations of a general non-local anisotropic linear mediu
 \end{subequations}
 The restriction of time integration to times $t'<t$ is the expression of the causality, which impose that the quantities at $t$ can only be influenced by the quantities are previous instants.
 
-If invariance with respect to the choice of origin in space (i.e. homogeneous) and time (i.e. stationary) can be asserted, then the previous relation can be expressed in terms of convolutions in the form of\parencite[p.19]{Brambilla1998}:
+If invariance with respect to the choice of origin in space (i.e. homogeneous) and time (i.e. stationary) can be asserted, the quantity verify $\mathbf{u}(\r,\r',t,t')=\mathbf{u}(\r-\r', t-t')$. This means that the quantity only depend on the the distance (time elapsed) between the excitation location (time) $(\r', t')$ and the response location (time) $(\r,t)$)\parencite{Dumont2017}. The previous relation can then be expressed in terms of convolutions in the form of\parencite[p.19]{Brambilla1998}:
 \begin{subequations}
 	\begin{align}
 	\boldsymbol{\mathcal{D}}(\mathbf{r}, t) 
@@ -544,6 +555,7 @@ If invariance with respect to the choice of origin in space (i.e. homogeneous) a
 	\int \diff \mathbf{r}' \;
 	\boldsymbol{\sigma}(\mathbf{r}-\mathbf{r}', t-t') \cdot \boldsymbol{\mathcal{E}}(\mathbf{r}', t')  
 	\end{align}
+	\label{eq:disp_relation_stationnary}
 \end{subequations}
 
 
@@ -570,14 +582,17 @@ In such as case, replacing the fields with the latter definition leads in the $k
 	\boldsymbol{\mathcal{D}}(\mathbf{k}, \omega) 
 	=& 
 	\boldsymbol{\varepsilon}(\mathbf{k}, \omega) \cdot \boldsymbol{\mathcal{E}}(\mathbf{k}, \omega) 
+	\label{eq:disp_relation_kw_D}
 	\\
 	\boldsymbol{\mathcal{B}}(\mathbf{k}, \omega) 
 	=& 
 	\boldsymbol{\mu}(\mathbf{k}, \omega) \cdot \boldsymbol{\mathcal{H}}(\mathbf{k}, \omega) 
+	\label{eq:disp_relation_kw_B}
 	\\
 	\boldsymbol{\mathcal{J}}(\mathbf{k}, \omega) 
 	=& 
 	\boldsymbol{\sigma}(\mathbf{k}, \omega) \cdot \boldsymbol{\mathcal{E}}(\mathbf{k}, \omega) 
+	\label{eq:disp_relation_kw_J}
 	\end{align}
 	\label{eq:k-omegaDispersionRelation}
 \end{subequations}
@@ -592,6 +607,86 @@ where the tensors have been defined by:
 	\end{align}
 \end{subequations}
 
+
+\subsubsection{Kramers-Kronig}
+The convolutional forms of the relationships \ref{eq:disp_relation_nonstationnary}
+
+\subsubsection{Energy density and power flow}
+\parencite[p.78]{Felsen1994}
+
+From the source free ($\boldsymbol{\mathcal{J}}=\boldsymbol{0}$) equations \ref{eq:Maxwell-Faraday} and \ref{eq:Maxwell-Ampere}, Taking the dot product of \ref{eq:Maxwell-Faraday} and \ref{eq:Maxwell-Ampere} with $\boldsymbol{\mathcal{H}}$  and $\boldsymbol{\mathcal{E}}$ respectively, and using the following vector calculus identity:
+$$
+\boldsymbol{\nabla}\cdot (\mathbf{A} \times \mathbf{B})
+=
+(\boldsymbol{\nabla} \times \mathbf{A})\cdot\mathbf{B} - \mathbf{A}\cdot (\boldsymbol{\nabla}\times \mathbf{B})
+$$
+one derives the following relation:
+\begin{equation}
+\boldsymbol{\nabla}\cdot(\boldsymbol{\mathcal{E}}\times\boldsymbol{\mathcal{H}})
+=
+- \left(
+\boldsymbol{\mathcal{E}}\cdot\frac{\partial \boldsymbol{\mathcal{D}}}{\partial t}
++
+\boldsymbol{\mathcal{H}}\cdot\frac{\partial \boldsymbol{\mathcal{B}}}{\partial t}
+\right)
+\label{eq:poynting_theorem_without_source}
+\end{equation}
+where $\boldsymbol{\mathcal{S}}=\boldsymbol{\mathcal{E}}\times\boldsymbol{\mathcal{H}}$ is the instantaneous density of electromagnetic power flow at $(\mathbf{r},t)$, known as the Poynting vector. Per definition of a power flow, the right hand side should correspond to the time derivative of an instantaneous energy density $\mathcal{W}$. However, this is difficult to identify in the present form since as seen in the previous section, for a generic time dispersive medium, the constitute relationships are quite tedious. However, if one drops the time-dependent fields by considering the fields as time-harmonic wave:
+$$
+\calE(\r,t) = \sqrt{2} \Re\left[\E(\r) e^{j\omega t}\right]
+\;\;\;\;\;\;
+\calH(\r,t) = \sqrt{2} \Re\left[\H(\r) e^{j\omega t}\right]
+$$
+then:
+\begin{eqnarray}
+\frac{\partial \calD}{\partial t} 
+&=& 
+j\omega \sqrt{2} \Re\left[\eps \cdot \E(\r)\right]
+\\
+\frac{\partial \calB}{\partial t} 
+&=& 
+j\omega \sqrt{2} \Re\left[\mut \cdot \H(\r)\right]
+\end{eqnarray}
+
+Recalling that the time-average of the product of two harmonic quantities $\mathcal{A}=\sqrt{2}\Re[Ae^{j\omega t}]$ and $\mathcal{B}=\sqrt{2}\Re[Be^{j\omega t}]$, with $T=2\pi/\omega$, is:
+\begin{equation}
+\left< \mathcal{A} \mathcal{B}\right>
+=
+\frac{1}{T} \int_0^T \mathcal{A} \mathcal{B} \, \diff t
+= \Re[AB^*] = \frac{1}{2}\left(AB^* + A^* B \right)
+\end{equation}
+then the time-average of \ref{eq:poynting_theorem_without_source} is:
+\begin{eqnarray*}
+\del\cdot \Re \left[ \E \times \H^*  \right]
+&=&
+j \omega \left[ 
+\E\cdot(\eps \cdot \E)^* + \E^*\cdot(\eps \cdot \E) +
+\H\cdot(\mut \cdot \H)^* + \H^*\cdot(\mut \cdot \H)
+\right]
+\\
+&=& a
+\end{eqnarray*}
+
+
+ (\ref{eq:FourierTimeHarmonicDef}) leads to:
+$$
+\del \cdot \left(\E(\r,\omega) \times \H(\r,\omega) \right)
+=
+-j\omega \left(\E(\r,\omega)\cdot \D(\r,\omega) + \H(\r,\omega)\cdot\B(\r,\omega) \right)
+$$
+If moreover the medium is stationary, ie. not time-dispersive and homogeneous, then one can use the dispersion relations (\ref{eq:disp_relation_anisotropic_stationnary_D}) and (\ref{eq:disp_relation_anisotropic_stationnary_B}) to get:
+$$
+\del \cdot \left(\E(\r,\omega) \times \H(\r,\omega) \right)
+=
+-j\omega \left(\E(\r,\omega)\cdot \eps (\r,\omega) \cdot \E(\r,\omega) + \H(\r,\omega)\cdot\boldsymbol{\mu}(\r,\omega)\cdot \B(\r,\omega) \right)
+$$
+
+
+
+The electromagnetic energy density for linear, non-dispersive materials, is given by definition by:
+$$
+\mathcal{W} = \frac{1}{2} \left( \calE\cdot\calD + \calB\cdot\calH \right)
+$$
 
 
 
@@ -608,8 +703,8 @@ where the tensors have been defined by:
 \paragraph{Power Handling}
 https://microwaves101.com/encyclopedias/coax-power-handling
 'e' in coax
-peak electric field e^1 ==> 60 ohm
-max power for e^0.5 ==> 30 ohm
+peak electric field $e^1$  ==> 60 ohm
+max power for $ e^0.5$  ==> 30 ohm
 average power handling -> heat 
 \subsubsection{Rectangular Waveguides}
 \paragraph{Power Handling}
@@ -623,6 +718,17 @@ average power handling -> heat
 \section{Microwave Measurements}
 [1] E.A. Wolff, R. Kaul, Microwave engineering and systems applications, 1988. doi:10.1109/MAP.1989.6095665.
 
+VSWR (Voltage Standing Wave Ratio)
+SWR (Standing Wave Ratio) are exactly the same. Since it is more practical to measure RF waves vy detecting voltage than current, most instruments measure the voltage and then convert to power ($P=V^2/R$) or the current from the line impedance ($I=V/Z$).
+
+An antenna is a device exhibiting resistance and reactance, ie. an impedance. The resistance can be considered to be made of real resistor and imaginary resistor. The real resistance is due to RF current losses in the material, while the imaginary resistance is the radiation resistance, due to the transformation between the antenna and its facing medium impedance. 
+
+\section{Dipole antenna}
+Reactance occurs when the antenna is operated away from its resonant point. At resonance, the antenna behaves like a pure resistance. 
+
+The antenna input can be modelled as capacitor, a self and a resistor in serie. At resonance, Xc and Xl are equal and opposite values so they cancel out, leaving just the resistance R. Below resonance only Xc is present and above only Xl is present. Hence the load will appear in these conditions either capacitive or inductive. 
+
+ 
 % ###########################################################################
 % ###########################################################################
 % ###########################################################################
