@@ -328,7 +328,7 @@ Doing the same for other fields and plugging into (\ref{eq:MaxwellEquationTimeSp
 
 
 % #######################################
-\subsection{$k-\omega$ Fields Representation}\label{sec:spectralRepresentation}
+\subsubsection{$k-\omega$ Fields Representation}\label{sec:spectralRepresentation}
 Let us generalise to the case where the field solution is represented by the summation of many plane (or evanescent) waves characterized by their wavevector $\mathbf{k}=(k_x, k_y, k_z)$. We construct a solution on the form: 	
 \begin{subequations}
 	\begin{align}
@@ -429,7 +429,7 @@ where $\mathbf{B}_0 = (\mathbf{k}\times\mathbf{E}_0)/\omega$. Without any other 
 
 % ###########################################################################
 % ###########################################################################
-\subsection{Constitutive Relations}
+\subsection{The Constitutive Relations}
 Fluxes densities ($\mathcal{D}$,$\mathcal{B}$) differ from field intensities ($\mathcal{E},\mathcal{H}$) inside the material  with regards to relative magnitude and direction. Flux densities can be interpreted  as a response of the medium to an applied excitation\footnote{If we recall the Gauss law $	Q = \oint \boldsymbol{\mathcal{D}} \cdot \diff S$, the flux $\boldsymbol{\mathcal{D}}$ depends on the charge inside the closed surface and doesn't depend on the material itself, but the field intensity does. 	}
 . Such, the constitutive relationships can be written generally as:
 \begin{subequations}
@@ -534,7 +534,7 @@ Thus, the constitutive relations of a general non-local anisotropic linear mediu
 \end{subequations}
 The restriction of time integration to times $t'<t$ is the expression of the causality, which impose that the quantities at $t$ can only be influenced by the quantities are previous instants.
 
-If invariance with respect to the choice of origin in space (i.e. homogeneous) and time (i.e. stationary) can be asserted, the quantity verify $\mathbf{u}(\r,\r',t,t')=\mathbf{u}(\r-\r', t-t')$. This means that the quantity only depend on the the distance (time elapsed) between the excitation location (time) $(\r', t')$ and the response location (time) $(\r,t)$)\parencite{Dumont2017}. The previous relation can then be expressed in terms of convolutions in the form of\parencite[p.19]{Brambilla1998}:
+If invariance with respect to the choice of origin in space (i.e. homogeneous) and time (i.e. stationary) can be asserted, the quantities only depend on the difference of time-space coordinates, that is verify $\mathbf{u}(\r,\r',t,t')=\mathbf{u}(\r-\r', t-t')$. This means that the quantity only depend on the the distance (time elapsed) between the excitation location (time) $(\r', t')$ and the response location (time) $(\r,t)$)\parencite{Dumont2017}. The previous relation can then be expressed in terms of convolutions in the form of\parencite[p.19]{Brambilla1998}:
 \begin{subequations}
 	\begin{align}
 	\boldsymbol{\mathcal{D}}(\mathbf{r}, t) 
@@ -555,9 +555,8 @@ If invariance with respect to the choice of origin in space (i.e. homogeneous) a
 	\int \diff \mathbf{r}' \;
 	\boldsymbol{\sigma}(\mathbf{r}-\mathbf{r}', t-t') \cdot \boldsymbol{\mathcal{E}}(\mathbf{r}', t')  
 	\end{align}
-	\label{eq:disp_relation_stationnary}
+	\label{eq:disp_relation_dispersive_homogeneous}
 \end{subequations}
-
 
 If one considers that the fields and current can be represented by a continuous spectrum of time-harmonic plane-waves such as done in section \ref{sec:spectralRepresentation}, which has the appearance of a four-dimensional Fourier transform \parencite{Clemmow1996}, i.e.:
 \begin{subequations}
@@ -608,8 +607,6 @@ where the tensors have been defined by:
 \end{subequations}
 
 
-\subsubsection{Kramers-Kronig}
-The convolutional forms of the relationships \ref{eq:disp_relation_nonstationnary}
 
 \subsubsection{Energy density and power flow}
 \parencite[p.78]{Felsen1994}
@@ -660,35 +657,118 @@ then the time-average of \ref{eq:poynting_theorem_without_source} is:
 \del\cdot \Re \left[ \E \times \H^*  \right]
 &=&
 j \omega \left[ 
-\E\cdot(\eps \cdot \E)^* + \E^*\cdot(\eps \cdot \E) +
-\H\cdot(\mut \cdot \H)^* + \H^*\cdot(\mut \cdot \H)
+-\E\cdot\eps^* \cdot \E^* + \E^*\cdot\eps \cdot \E 
+-\H\cdot\mut^* \cdot \H^* + \H^*\cdot\mut \cdot \H
 \right]
 \\
-&=& a
+&=& 
+j \omega \left[ 
+\E^*\cdot\left(\eps - \eps^H\right) \cdot \E +
+\H^*\cdot\left(\mut - \mut^H\right) \cdot \H
+\right]
 \end{eqnarray*}
-
-
- (\ref{eq:FourierTimeHarmonicDef}) leads to:
+where $\mathbf{M}^H$ is the complex conjugate transpose of $\mathbf{M}$, also known as the \emph{Hermitian} transpose\footnote{This last relationship can be demonstrated from the following: 
 $$
-\del \cdot \left(\E(\r,\omega) \times \H(\r,\omega) \right)
-=
--j\omega \left(\E(\r,\omega)\cdot \D(\r,\omega) + \H(\r,\omega)\cdot\B(\r,\omega) \right)
-$$
-If moreover the medium is stationary, ie. not time-dispersive and homogeneous, then one can use the dispersion relations (\ref{eq:disp_relation_anisotropic_stationnary_D}) and (\ref{eq:disp_relation_anisotropic_stationnary_B}) to get:
-$$
-\del \cdot \left(\E(\r,\omega) \times \H(\r,\omega) \right)
-=
--j\omega \left(\E(\r,\omega)\cdot \eps (\r,\omega) \cdot \E(\r,\omega) + \H(\r,\omega)\cdot\boldsymbol{\mu}(\r,\omega)\cdot \B(\r,\omega) \right)
-$$
+\E\cdot\eps^*\E^* = \sum_j E_j \sum_{k} \varepsilon^{*}_{jk} E_k^* = \sum_j E_j^* \sum_{k} \varepsilon^{*}_{kj} E_k=\E^*\cdot\eps^H\E
+$$ since $\sum_{k} \varepsilon^{*}_{kj} E_k=\eps^H E$ per definition of $\eps^H$.}. From the latter relation, if the permittivity and permeability tensors are Hermitian, that is if they verify $\eps=\eps^H$ and $\mut=\mut^H$, then the instantaneous density of electromagnetic power flow is zero. Thus, if the medium has Hermitian permittivity and permeability, the medium is lossless. 
+
+Although the latter property seems anecdotal, the fact that these tensors be Hermitian leads to many interesting consequences of time-invariant lossless media, since the following properties can be demonstrated:
+\begin{itemize}
+ \item The diagonal elements are necessarily real, because they have to be equal to their complex conjugate.
+ \item Because of conjugation, for complex valued entries the off-diagonal elements cannot be symmetric (or same). \item Moreover, a matrix that has only real entries is Hermitian if and only if it is a symmetric matrix, i.e., if it is symmetric with respect to the main diagonal. 
+ \item Hermitian matrix can be diagonalized by a unitary matrix, and that the resulting diagonal matrix has only real entries. This implies that all eigenvalues of a Hermitian matrix A with dimension n are real, and that A has n linearly independent eigenvectors (ie. orthogonal) and its determinant is real.      
+\end{itemize}
 
 
+\subsubsection{Can a lossless dielectric exist? The Kramers-Kronig relationships}
+A dielectric is a material that can be polarized by an applied electric field. This polarization involves the partial separation of electric charges within the material, a process which requires energy. So, polarizing a dielectric means storing energy in it. In a lossy dielectric, this energy is absorbed and for example converted into heat. In a lossless dielectric, one could theoretically get back the energy put into it. 
 
-The electromagnetic energy density for linear, non-dispersive materials, is given by definition by:
-$$
-\mathcal{W} = \frac{1}{2} \left( \calE\cdot\calD + \calB\cdot\calH \right)
-$$
+The frequency dependence of dispersive dielectrics comes from the fact that the polarization response of the material to the time-varying electric field cannot be instantaneous. Like in signal processing, such dynamic response can be described by a convolutional relationship such like \ref{eq:disp_relation_dispersive_homogeneous}:
+\begin{equation}
+ \label{eq:convolution_D1}
+ \calD(\r,t) 
+  = \int_{-\infty}^t \eps(t-t')\E(\r,t') \, \diff t'
+  = \varepsilon_0 \int_{-\infty}^t \eps_r(t-t')\E(\r,t') \, \diff t'
+\end{equation}
+Equation (\ref{eq:convolution_D1}) means that the value of $\calD(\r,t)$ at the present time $t$ only depends on the past values of $\E(\r,t')$, with $t'\leq t$. This equation can be equivalently expressed as a standard convolution by extending the integration range to all times if the dielectric response is a causal function, that is if $\eps_r(t)=0$ for $t<0$:
+\begin{equation}
+ \label{eq:convolution_D}
+ \calD(\r,t) 
+  = \varepsilon_0 \int_{-\infty}^{+\infty} \eps_r(t-t')\E(\r,t') \, \diff t'
+\end{equation}
+The causality condition can be expressed in terms of the unit step function $u(t)$:
+\begin{equation}
+ \eps_r(t) = \eps_r(t) u(t)
+\end{equation}
+where $u(t) = 1$ if $t \geq  0$. The Fourier transform of a product of two functions being a convolution of their Fourier transforms, we have:
+\begin{equation}
+  \label{eq:convolution_frequency_epsr}
+ \eps_r(\omega) 
+ = 
+ \frac{1}{2\pi} \int_{-\infty}^{+\infty}
+  \eps_r(\omega') U(\omega - \omega') \, \diff \omega'
+\end{equation}
+where $U(\omega)$ is the Fourier transform of the unit step function $u(t)$:
+\begin{equation}
+ U(\omega) = \lim_{e\to 0^+} \frac{1}{j\omega + e} = \mathcal{P}\frac{1}{j\omega} + \pi \delta(\omega)
+\end{equation}
+where the symbol $\mathcal{P}$ denotes the Cauchy principal value. Inserting the latter in \ref{eq:convolution_frequency_epsr}:
+\begin{eqnarray}
+ \eps_r(\omega) 
+ &=& 
+ \frac{1}{2\pi} \int_{-\infty}^{+\infty}
+  \eps_r(\omega') 
+  \left[
+    \mathcal{P}\frac{1}{j(\omega-\omega')} + \pi \delta(\omega - \omega')
+  \right]
+  \, \diff \omega'
+\\
+&=&
+ \frac{1}{2\pi j} 
+ \mathcal{P}
+ \int_{-\infty}^{+\infty}
+    \frac{\eps_r(\omega')}{\omega-\omega'} 
+  \, \diff \omega'
+  + \frac{1}{2} \eps_r(\omega)
+\end{eqnarray}
+Rearranging the terms leads to:
+\begin{eqnarray}
+  \label{eq:Kramers-Kronig-complex}
+ \eps_r(\omega) 
+ &=& 
+ \frac{1}{\pi j} 
+ \mathcal{P}
+ \int_{-\infty}^{+\infty}
+    \frac{\eps_r(\omega')}{\omega-\omega'} 
+  \, \diff \omega'
+\end{eqnarray}
+which is the complex-valued formulation of the Kramers-Kronig relation. Setting $\eps_r = \eps_r' + j \eps_r''$ and separating \ref{eq:Kramers-Kronig-complex} into its real and imaginary parts, we obtain the conventional Kramers-Kronig relations:
+\begin{eqnarray}
+ \eps_r'(\omega) 
+ &=& 
+ \frac{1}{\pi} 
+ \mathcal{P}
+ \int_{-\infty}^{+\infty}
+    \frac{\eps_r''(\omega')}{\omega-\omega'} 
+  \, \diff \omega'
+ \\
+ \eps_r''(\omega) 
+ &=& 
+ -\frac{1}{\pi} 
+ \mathcal{P}
+ \int_{-\infty}^{+\infty}
+    \frac{\eps_r'(\omega')}{\omega-\omega'} 
+  \, \diff \omega'
+  \label{eq:Kramers-Kronig}
+\end{eqnarray}
 
+The Kramers-Kronig relations relates the real and the imaginary parts of the relative permittivity. This is a direct consequence in the frequency domain of the causality. An interesting consequence of the Kramers-Kronig relations is that there cannot exist a dispersive medium that is purely lossless, ie $\eps_r''(\omega)=0$ for all $\omega$, since this would also require that $\eps_r'(\omega)=0$. However many cases, the loss can be found small enough in a given bandwidth to be considered as negligible locally.    
 
+A second consequence is that the causality implies the analyticity condition of $\eps_r$. Indeed, in order to satisfy the Kramers-Kronig relations, $\eps_r$ must be analytic in the closed upper half-plane of $\omega$. This latter result is of interest for complex integration when dealing with lossy plasma\parencite{Brambilla1998}. 
+
+TODO: demonstration using signum function? (can be graphical)
+
+TODO: expressing KK relation for positive $\omega$. Usefull?
 
 % ###########################################################################
 % ###########################################################################
