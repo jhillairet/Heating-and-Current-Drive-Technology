@@ -27,6 +27,8 @@ xticks(fontsize=14)
 yticks(fontsize=14)
 ylim([1e-26, 2e-15])
 legend(('D-D', 'D-T', 'D-He$^3$'), loc='best', fontsize=18)
+tight_layout()
+savefig('cross_section_vs_E.png', dpi=300)
 
 """
 Plot the total cross section in m^2 for various species vs incident energy in keV
@@ -67,3 +69,6 @@ legend(('D-D', 'D-T', 'D-He$^3$'), loc='best', fontsize=18)
 ylim([1e-32, 2e-27])
 xticks(fontsize=14)
 yticks(fontsize=14)
+tight_layout()
+savefig('reaction_rates_vs_temperature.png', dpi=300)
+
